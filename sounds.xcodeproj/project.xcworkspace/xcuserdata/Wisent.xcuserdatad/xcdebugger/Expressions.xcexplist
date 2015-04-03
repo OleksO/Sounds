@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "Sounds.Game.eButton (Sounds.Game)(ObjectiveC.UIButton) -&gt; ():Game.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lettersLables">
+            </PersistentString>
+            <PersistentString
+               value = "lettersLables[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Sounds.Game.letterChosed (Sounds.Game)(Swift.String) -&gt; ():Game.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "name">
+            </PersistentString>
+            <PersistentString
+               value = "keys[&quot;\(name)&quot;]!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "top_level_code:AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "status">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Sounds.ViewController.viewDidLoad (Sounds.ViewController)() -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "status">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Sounds.Game.miniGameStart (Sounds.Game)(Swift.String) -&gt; ():Game.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "keys">
+            </PersistentString>
+            <PersistentString
+               value = "keys[&quot;\(name)&quot;]!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
