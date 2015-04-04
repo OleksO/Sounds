@@ -6,21 +6,17 @@
 //  Copyright (c) 2015 Oleksandr Ovadenko. All rights reserved.
 //
 
-
 import UIKit
 import AVFoundation
 
-
 class Task2: UIViewController {
     
-    
     @IBOutlet var lettersLables: Array<UIButton>!
-    @IBOutlet var answersLables: Array<UILabel>!
+    @IBOutlet var answersLables: Array<UILabel>!  
     
     var correctAnswer = ""
     var correctLabel: UILabel!
     var activeMiniGame: UIButton!
-    
     
     var winSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("win", ofType: "mp3")!)
     var winPlayer = AVAudioPlayer()
@@ -28,23 +24,16 @@ class Task2: UIViewController {
     var lostSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("fail", ofType: "mp3")!)
     var lostPlayer = AVAudioPlayer()
     
-    
-    
     var keys : [String:String] = ["ВОВК":"О","ПРИЗ":"И","КУЩ":"У","ДРІТ":"І","РАК":"А","ЧЕК":"Е"]
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        
+           
         winPlayer = AVAudioPlayer(contentsOfURL: winSound, error: nil)
         winPlayer.prepareToPlay()
         
         lostPlayer = AVAudioPlayer(contentsOfURL: lostSound, error: nil)
         lostPlayer.prepareToPlay()
-        
-        
     }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -53,7 +42,6 @@ class Task2: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func showVariants() {
@@ -67,7 +55,6 @@ class Task2: UIViewController {
         for eachletter in lettersLables {
             eachletter.hidden = true
         }
-        
     }
     
     func checkAnswer(compareWith: String, toCheck: String) -> Bool {
@@ -78,8 +65,7 @@ class Task2: UIViewController {
         }
         
     }
-    
-    
+        
     func miniGameStart(button: UIButton) {
         activeMiniGame = button
         let name = button.titleLabel!.text!
@@ -98,7 +84,6 @@ class Task2: UIViewController {
         }
         showVariants()
     }
-    
     
     func letterChosed (sender: UIButton) {
         var text = sender.titleLabel!.text!
@@ -121,9 +106,7 @@ class Task2: UIViewController {
             default : return
             }
         }
-        
     }
-    
     
     @IBAction func vovkButton(sender: UIButton) {
         miniGameStart(sender)
@@ -152,7 +135,6 @@ class Task2: UIViewController {
     
     @IBAction func eButton(sender: UIButton) {
         letterChosed(sender)
-        
     }
     
     @IBAction func jButton(sender: UIButton) {
@@ -174,8 +156,5 @@ class Task2: UIViewController {
     @IBAction func bButton(sender: UIButton) {
         letterChosed(sender)
     }
-    
-    
-    
 }
 
