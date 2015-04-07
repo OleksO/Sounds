@@ -9,33 +9,33 @@
 import UIKit
 import AVFoundation
 
+extension Array {
+    func shuffled() -> [T] {
+        var list = self
+        for i in 0..<(list.count - 1) {
+            let j = Int(arc4random_uniform(UInt32(list.count - i))) + i
+            swap(&list[i], &list[j])
+        }
+        return list
+    }
+}
+
 class FindVowels: UIViewController {
-    
-    @IBOutlet var lettersButtons: Array<UIButton>!
-    @IBOutlet var lettersImages: Array<UIImageView>!
-    
-    @IBOutlet var бук:Array<UIImageView>!
-    @IBOutlet var лак:Array<UIImageView>!
-    @IBOutlet var сом:Array<UIImageView>!
-    @IBOutlet var бик:Array<UIImageView>!
-    @IBOutlet var пень:Array<UIImageView>!
-    @IBOutlet var ніс:Array<UIImageView>!
+
+    @IBOutlet var lettersButtons: Array<UIButton>! // массив гласных в конкретном порядке Е, А, О, И, Е, І
+    @IBOutlet var pageButtons:Array<UIButton>! // кнопки с картинками
 
     
-    var activeMiniGame: UIButton!
-    var correctAnswerImage:UIImageView!
-    var correctAnswerButton:UIButton!
-    var pressCounter: Int = 0
+    @IBOutlet var testLabels: [UILabel]!
+    @IBOutlet var answerLabels: [UILabel]!
     
-    var букSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("бук", ofType: "wav")!)
-    var лакSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("лак", ofType: "wav")!)
-    var сомSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("сом", ofType: "wav")!)
-    var бикSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("бик", ofType: "wav")!)
-    var пеньSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("пень", ofType: "wav")!)
-    var нісSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ніс", ofType: "wav")!)
+    var answersForMiniGames:Array<String> = []
+    var activeMiniGame: UIButton!
+    var pressCounter: Int = 0
+    var activePage:Int = 1
     
     var winSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("good", ofType: "wav")!)
-    var tryAgainSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("tryagain", ofType: "wav")!)
+    var trySound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("tryagain", ofType: "wav")!)
     
     var player = AVAudioPlayer()
     var еPlayer = AVAudioPlayer()
@@ -47,208 +47,33 @@ class FindVowels: UIViewController {
     
     var leftToSolve = 6
     
+    
+    /* 
+        Правим только переменые снизу
+        let page....Words
+        Объявляем слова для каждой странице. не определяет порядок отображения на странице.
+        var букSound
+        Прописываем звуки для каждого изображения (предварительно перенести файлы в проект)
 
-    
-    
-    func miniGameStart(button: UIButton) {
-        pressCounter = 1
-        activeMiniGame = button
-        let name = button.titleLabel!.text!
-        
-        lettersButtons[0].frame = CGRect(x: button.frame.origin.x+15, y: button.frame.origin.y+20, width: 60, height: 60)
-        lettersButtons[1].frame = CGRect(x: button.frame.origin.x+15, y: button.frame.origin.y+100, width: 60, height: 60)
-        lettersButtons[2].frame = CGRect(x: button.frame.origin.x+15, y: button.frame.origin.y+180, width: 60, height: 60)
-        lettersButtons[3].frame = CGRect(x: button.frame.origin.x+309, y: button.frame.origin.y+20, width: 60, height: 60)
-        lettersButtons[4].frame = CGRect(x: button.frame.origin.x+309, y: button.frame.origin.y+100, width: 60, height: 60)
-        lettersButtons[5].frame = CGRect(x: button.frame.origin.x+309, y: button.frame.origin.y+180, width: 60, height: 60)
-        
-        lettersImages[0].frame = CGRect(x: button.frame.origin.x+15, y: button.frame.origin.y+20, width: 60, height: 60)
-        lettersImages[1].frame = CGRect(x: button.frame.origin.x+15, y: button.frame.origin.y+100, width: 60, height: 60)
-        lettersImages[2].frame = CGRect(x: button.frame.origin.x+15, y: button.frame.origin.y+180, width: 60, height: 60)
-        lettersImages[3].frame = CGRect(x: button.frame.origin.x+309, y: button.frame.origin.y+20, width: 60, height: 60)
-        lettersImages[4].frame = CGRect(x: button.frame.origin.x+309, y: button.frame.origin.y+100, width: 60, height: 60)
-        lettersImages[5].frame = CGRect(x: button.frame.origin.x+309, y: button.frame.origin.y+180, width: 60, height: 60)
-        
-        for letters in lettersButtons {
-            letters.hidden = false
-        }
-        for letters in lettersImages {
-            letters.hidden = false
-        }
-        
-        switch name {
-        case "БУК" :
-            player = AVAudioPlayer(contentsOfURL: букSound, error: nil)
-            player.prepareToPlay()
-            бук[0].frame = CGRect(x: button.frame.origin.x+139, y: button.frame.origin.y+302, width: 30, height: 30)
-            бук[1].frame = CGRect(x: button.frame.origin.x+177, y: button.frame.origin.y+302, width: 30, height: 30)
-            бук[2].frame = CGRect(x: button.frame.origin.x+215, y: button.frame.origin.y+302, width: 30, height: 30)
-            бук[3].frame = CGRect(x: button.frame.origin.x+177, y: button.frame.origin.y+302, width: 30, height: 30)
-            
-            correctAnswerButton = lettersButtons[5]
-            
-            for var i=0; i<бук.count-1; i++ {
-                бук[i].hidden = false
-            }
-            
-            correctAnswerImage = бук[3]
-            correctAnswerImage.frame = CGRect(x: button.frame.origin.x+177, y: button.frame.origin.y+302, width: 30, height: 30)
-       
-        case "ЛАК" :
-            player = AVAudioPlayer(contentsOfURL: лакSound, error: nil)
-            player.prepareToPlay()
-            лак[0].frame = CGRect(x: button.frame.origin.x+139, y: button.frame.origin.y+302, width: 30, height: 30)
-            лак[1].frame = CGRect(x: button.frame.origin.x+177, y: button.frame.origin.y+302, width: 30, height: 30)
-            лак[2].frame = CGRect(x: button.frame.origin.x+215, y: button.frame.origin.y+302, width: 30, height: 30)
-            лак[3].frame = CGRect(x: button.frame.origin.x+177, y: button.frame.origin.y+302, width: 30, height: 30)
-            
-            correctAnswerButton = lettersButtons[2]
-            
-            for var i=0; i<лак.count-1; i++ {
-                лак[i].hidden = false
-            }
-            
-            correctAnswerImage = лак[3]
-            correctAnswerImage.frame = CGRect(x: button.frame.origin.x+177, y: button.frame.origin.y+302, width: 30, height: 30)
-            
-        case "СОМ" :
-            player = AVAudioPlayer(contentsOfURL: сомSound, error: nil)
-            player.prepareToPlay()
-            сом[0].frame = CGRect(x: button.frame.origin.x+139, y: button.frame.origin.y+302, width: 30, height: 30)
-            сом[1].frame = CGRect(x: button.frame.origin.x+177, y: button.frame.origin.y+302, width: 30, height: 30)
-            сом[2].frame = CGRect(x: button.frame.origin.x+215, y: button.frame.origin.y+302, width: 30, height: 30)
-            сом[3].frame = CGRect(x: button.frame.origin.x+177, y: button.frame.origin.y+302, width: 30, height: 30)
-            
-            correctAnswerButton = lettersButtons[1]
-            
-            for var i=0; i<сом.count-1; i++ {
-                сом[i].hidden = false
-            }
-            
-            correctAnswerImage = сом[3]
-            correctAnswerImage.frame = CGRect(x: button.frame.origin.x+177, y: button.frame.origin.y+302, width: 30, height: 30)
-            
-        case "БИК" :
-            player = AVAudioPlayer(contentsOfURL: бикSound, error: nil)
-            player.prepareToPlay()
-            бик[0].frame = CGRect(x: button.frame.origin.x+139, y: button.frame.origin.y+302, width: 30, height: 30)
-            бик[1].frame = CGRect(x: button.frame.origin.x+177, y: button.frame.origin.y+302, width: 30, height: 30)
-            бик[2].frame = CGRect(x: button.frame.origin.x+215, y: button.frame.origin.y+302, width: 30, height: 30)
-            бик[3].frame = CGRect(x: button.frame.origin.x+177, y: button.frame.origin.y+302, width: 30, height: 30)
-            
-            correctAnswerButton = lettersButtons[3]
-            
-            for var i=0; i<бик.count-1; i++ {
-                бик[i].hidden = false
-            }
-            
-            correctAnswerImage = бик[3]
-            correctAnswerImage.frame = CGRect(x: button.frame.origin.x+177, y: button.frame.origin.y+302, width: 30, height: 30)
-            
-        case "ПЕНЬ" :
-            player = AVAudioPlayer(contentsOfURL: пеньSound, error: nil)
-            player.prepareToPlay()
-            пень[0].frame = CGRect(x: button.frame.origin.x+120, y: button.frame.origin.y+302, width: 30, height: 30)
-            пень[1].frame = CGRect(x: button.frame.origin.x+158, y: button.frame.origin.y+302, width: 30, height: 30)
-            пень[2].frame = CGRect(x: button.frame.origin.x+196, y: button.frame.origin.y+302, width: 30, height: 30)
-            пень[3].frame = CGRect(x: button.frame.origin.x+234, y: button.frame.origin.y+302, width: 30, height: 30)
-            пень[4].frame = CGRect(x: button.frame.origin.x+158, y: button.frame.origin.y+302, width: 30, height: 30)
-            
-            correctAnswerButton = lettersButtons[0]
-            
-            for var i=0; i<пень.count-1; i++ {
-                пень[i].hidden = false
-            }
-            
-            correctAnswerImage = пень[4]
-            correctAnswerImage.frame = CGRect(x: button.frame.origin.x+158, y: button.frame.origin.y+302, width: 30, height: 30)
-            
-        case "НІС" :
-            player = AVAudioPlayer(contentsOfURL: нісSound, error: nil)
-            player.prepareToPlay()
-            ніс[0].frame = CGRect(x: button.frame.origin.x+139, y: button.frame.origin.y+302, width: 30, height: 30)
-            ніс[1].frame = CGRect(x: button.frame.origin.x+177, y: button.frame.origin.y+302, width: 30, height: 30)
-            ніс[2].frame = CGRect(x: button.frame.origin.x+215, y: button.frame.origin.y+302, width: 30, height: 30)
-            ніс[3].frame = CGRect(x: button.frame.origin.x+177, y: button.frame.origin.y+302, width: 30, height: 30)
-            
-            correctAnswerButton = lettersButtons[4]
-            
-            for var i=0; i<ніс.count-1; i++ {
-                ніс[i].hidden = false
-            }
-            
-            correctAnswerImage = ніс[3]
-            correctAnswerImage.frame = CGRect(x: button.frame.origin.x+177, y: button.frame.origin.y+302, width: 30, height: 30)
-            
-        default: return
-        }
-    }
-    
-    func letterChosed (sender: UIButton) {
-        if sender == correctAnswerButton {
-            hideVariants()
-            correctAnswerImage.hidden = false
-            pressCounter = 0
-            activeMiniGame.hidden = true
-            player.play()
-            leftToSolve = leftToSolve - 1
-        } else {
-            еPlayer = AVAudioPlayer(contentsOfURL: tryAgainSound, error: nil)
-            еPlayer.prepareToPlay()
-            оPlayer = AVAudioPlayer(contentsOfURL: tryAgainSound, error: nil)
-            оPlayer.prepareToPlay()
-            аPlayer = AVAudioPlayer(contentsOfURL: tryAgainSound, error: nil)
-            аPlayer.prepareToPlay()
-            иPlayer = AVAudioPlayer(contentsOfURL: tryAgainSound, error: nil)
-            иPlayer.prepareToPlay()
-            іPlayer = AVAudioPlayer(contentsOfURL: tryAgainSound, error: nil)
-            іPlayer.prepareToPlay()
-            уPlayer = AVAudioPlayer(contentsOfURL: tryAgainSound, error: nil)
-            уPlayer.prepareToPlay()
-            
-            
-            switch sender {
-            case lettersButtons[0] : pressCounter = 2; еPlayer.play()
-            case lettersButtons[1] : pressCounter = 2; оPlayer.play()
-            case lettersButtons[2] : pressCounter = 2; аPlayer.play()
-            case lettersButtons[3] : pressCounter = 2; иPlayer.play()
-            case lettersButtons[4] : pressCounter = 2; іPlayer.play()
-            case lettersButtons[5] : pressCounter = 2; уPlayer.play()
-            default : pressCounter = 2
-          }
-        }
-    }
+    */
+    let pageOneWords = ["БУК","ЛАК","СОМ","БИК","ПЕНЬ","НІС"]
+    let pageTwoWords = ["БИК","ПЕНЬ","НІС","СОМ","ЛАК","БУК"]
 
-    
-    func hideVariants() {
-        for letters in lettersButtons {
-            letters.hidden = true
-        }
-        for letters in lettersImages {
-            letters.hidden = true
-        }
 
-        }
+    var букSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("бук", ofType: "wav")!)
+    var лакSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("лак", ofType: "wav")!)
+    var сомSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("сом", ofType: "wav")!)
+    var бикSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("бик", ofType: "wav")!)
+    var нісSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ніс", ofType: "wav")!)
+    var пеньSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("пень", ofType: "wav")!)
     
-    func checkIfGameOver() -> Bool {
-        if leftToSolve == 0 {
-            let seconds = 2.0
-            let delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
-            var dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
-            dispatch_after(dispatchTime, dispatch_get_main_queue(), {
-                self.player = AVAudioPlayer(contentsOfURL: self.winSound, error: nil)
-                self.player.prepareToPlay()
-                self.player.play()
-                })
-            return true
-        } else {
-            return false
-        }
-    }
-
+    /*
+        Ниже ничего не править
+    */
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadPage(activePage)
     }
 
     override func prefersStatusBarHidden() -> Bool {
@@ -260,140 +85,223 @@ class FindVowels: UIViewController {
     }
 
 
-    @IBAction func букButton(sender: UIButton) {
+    func miniGameStart(button: UIButton) {
+        pressCounter = 1
+        activeMiniGame = button
+        activeMiniGame.titleLabel!.text! = button.titleLabel!.text!
+        var name = button.titleLabel!.text!
         
-        switch pressCounter {
-        case 0 : miniGameStart(sender)
-        case 2 : player.play()
-        default : return
-            
+        lettersButtons[0].frame = CGRect(x: activeMiniGame.frame.origin.x+15, y: activeMiniGame.frame.origin.y+20, width: 60, height: 60)
+        lettersButtons[1].frame = CGRect(x: activeMiniGame.frame.origin.x+15, y: activeMiniGame.frame.origin.y+100, width: 60, height: 60)
+        lettersButtons[2].frame = CGRect(x: activeMiniGame.frame.origin.x+15, y: activeMiniGame.frame.origin.y+180, width: 60, height: 60)
+        lettersButtons[3].frame = CGRect(x: activeMiniGame.frame.origin.x+309, y: activeMiniGame.frame.origin.y+20, width: 60, height: 60)
+        lettersButtons[4].frame = CGRect(x: activeMiniGame.frame.origin.x+309, y: activeMiniGame.frame.origin.y+100, width: 60, height: 60)
+        lettersButtons[5].frame = CGRect(x: activeMiniGame.frame.origin.x+309, y: activeMiniGame.frame.origin.y+180, width: 60, height: 60)
+        
+        for i in 0...5 {
+           lettersButtons[i].hidden = false
         }
+        testLabels[button.titleLabel!.text!.toInt()!].hidden = false
     }
 
     
-    @IBAction func лакButton(sender: UIButton) {
-        switch pressCounter {
-        case 0 : miniGameStart(sender)
-        case 2 : player.play()
-        default : return
+    func letterChosed (sender: UIButton) {
+            if sender.titleLabel!.text! == answersForMiniGames[activeMiniGame.titleLabel!.text!.toInt()!] {
+                pressCounter = 0
+                activeMiniGame.enabled = false
+                activeMiniGame.highlighted = true
+                leftToSolve = leftToSolve - 1
+                for i in 0...5 {
+                    lettersButtons[i].hidden = true
+                }
+                testLabels[activeMiniGame.titleLabel!.text!.toInt()!].hidden = true
+                answerLabels[activeMiniGame.titleLabel!.text!.toInt()!].hidden = false
+                
+            } else {
+                еPlayer = AVAudioPlayer(contentsOfURL: trySound, error: nil)
+                еPlayer.prepareToPlay()
+                оPlayer = AVAudioPlayer(contentsOfURL: trySound, error: nil)
+                оPlayer.prepareToPlay()
+                аPlayer = AVAudioPlayer(contentsOfURL: trySound, error: nil)
+                аPlayer.prepareToPlay()
+                иPlayer = AVAudioPlayer(contentsOfURL: trySound, error: nil)
+                иPlayer.prepareToPlay()
+                іPlayer = AVAudioPlayer(contentsOfURL: trySound, error: nil)
+                іPlayer.prepareToPlay()
+                уPlayer = AVAudioPlayer(contentsOfURL: trySound, error: nil)
+                уPlayer.prepareToPlay()
+                
+                switch sender {
+                case lettersButtons[0] : pressCounter = 2; еPlayer.play()
+                case lettersButtons[1] : pressCounter = 2; оPlayer.play()
+                case lettersButtons[2] : pressCounter = 2; аPlayer.play()
+                case lettersButtons[3] : pressCounter = 2; иPlayer.play()
+                case lettersButtons[4] : pressCounter = 2; іPlayer.play()
+                case lettersButtons[5] : pressCounter = 2; уPlayer.play()
+                default : pressCounter = 2
+                }
         }
     }
     
-    @IBAction func сомButton(sender: UIButton) {
-        switch pressCounter {
-        case 0 : miniGameStart(sender)
-        case 2 : player.play()
-        default : return
+        
+        func gameOver() -> Bool {
+            if leftToSolve == 0 {
+                return true
+            } else {
+                return false
+            }
+        }
+        
+
+        
+        func loadPage(nextPage: Int) {
+            
+            switch nextPage {
+            case 1: definingEverythingForPage(pageOneWords)
+            case 2: definingEverythingForPage(pageTwoWords)
+            default: return
+            }
+            
+        }
+    
+    func definingEverythingForPage (set: Array<String>) {
+
+        for i in 0..<answerLabels.count {
+            answerLabels[i].hidden = true
+        }
+        
+        let pageOneWordsShuffled = pageOneWords.shuffled()
+        for button in pageButtons {
+            button.enabled = false
+        }
+        
+        for i in 0...5 {
+            pageButtons[i].setImage(UIImage(named: "\(pageOneWordsShuffled[i])"+".png"), forState: .Normal)
+            pageButtons[i].setTitle("\(i)", forState: .Normal)
+        }
+        for button in pageButtons {
+            button.enabled = true
+        }
+        
+        for var y=0; y<6; y++ {
+            var namesAsArrayOfChars = Array(pageOneWordsShuffled[y])
+            var namesAsArrayOfCharsReadyToShow: Array<Character> = []
+            var key:String = ""
+            
+            for char in namesAsArrayOfChars {
+                if (char == "У") || (char == "Е") || (char == "А") || (char == "О") || (char == "И") || (char == "І") {
+                    namesAsArrayOfCharsReadyToShow.append(" ")
+                    key = String(char)
+                    answersForMiniGames.append(key)
+                } else {
+                    namesAsArrayOfCharsReadyToShow.append(char)
+                }
+            }
+            
+            var nameReadyToShow:String = ""
+            
+            for var i=0; i<namesAsArrayOfCharsReadyToShow.count; i++ {
+                nameReadyToShow += String(namesAsArrayOfCharsReadyToShow[i])
+            }
+            
+            testLabels[y].text = nameReadyToShow
+            answerLabels[y].text = pageOneWordsShuffled[y]
+            
         }
     }
     
-    @IBAction func бикButton(sender: UIButton) {
+    
+        func shallWeMoveToNextPage() {
+            if gameOver() {
+                
+                var seconds = 2.0
+                var delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
+                var dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+                dispatch_after(dispatchTime, dispatch_get_main_queue(), {
+                    
+                    self.player = AVAudioPlayer(contentsOfURL: self.winSound, error: nil)
+                    self.player.prepareToPlay()
+                    self.player.play()
+                    
+                })
+                
+                seconds = 5.0
+                delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
+                dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+                dispatch_after(dispatchTime, dispatch_get_main_queue(), {
+                    
+                    self.activePage += 1
+                    self.loadPage(self.activePage)
+                    
+                })
+            }
+        }
+
+    func whenPressingTheImage (sender: UIButton) {
         switch pressCounter {
         case 0 : miniGameStart(sender)
-        case 2 : player.play()
+        case 2 : if activeMiniGame == sender {
+            //проиграть название предмета
+            }
         default : return
         }
+    }
+
+    @IBAction func firstButton(sender: UIButton) {
+        whenPressingTheImage(sender)
+            }
+
+    
+    @IBAction func secondButton(sender: UIButton) {
+        whenPressingTheImage(sender)
     }
     
-    @IBAction func пеньButton(sender: UIButton) {
-        switch pressCounter {
-        case 0 : miniGameStart(sender)
-        case 2 : player.play()
-        default : return
-        }
+    @IBAction func thirdButton(sender: UIButton) {
+        whenPressingTheImage(sender)
     }
     
-    @IBAction func нісButton(sender: UIButton) {
-        switch pressCounter {
-        case 0 : miniGameStart(sender)
-        case 2 : player.play()
-        default : return
-        }
+    @IBAction func fourthButton(sender: UIButton) {
+        whenPressingTheImage(sender)
     }
+    
+    @IBAction func fifthButton(sender: UIButton) {
+        whenPressingTheImage(sender)
+    }
+    
+    @IBAction func sixthButton(sender: UIButton) {
+        whenPressingTheImage(sender)
+    }
+    
+
+    
     
     @IBAction func еButton(sender: UIButton) {
         letterChosed(sender)
-        if checkIfGameOver() == true {
-            let seconds = 2.0
-            let delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
-            var dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
-            dispatch_after(dispatchTime, dispatch_get_main_queue(), {
-                self.performSegueWithIdentifier("toTask2", sender: nil)
-            })
-            
-        }
-
+        shallWeMoveToNextPage()
     }
     
     @IBAction func оButton(sender: UIButton) {
         letterChosed(sender)
-        if checkIfGameOver() == true {
-            let seconds = 2.0
-            let delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
-            var dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
-            dispatch_after(dispatchTime, dispatch_get_main_queue(), {
-                self.performSegueWithIdentifier("toTask2", sender: nil)
-            })
-            
-        }
-
+        shallWeMoveToNextPage()
     }
     
     @IBAction func аButton(sender: UIButton) {
         letterChosed(sender)
-        if checkIfGameOver() == true {
-            let seconds = 2.0
-            let delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
-            var dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
-            dispatch_after(dispatchTime, dispatch_get_main_queue(), {
-                self.performSegueWithIdentifier("toTask2", sender: nil)
-            })
-            
-        }
+        shallWeMoveToNextPage()
     }
     
     @IBAction func иButton(sender: UIButton) {
         letterChosed(sender)
-        if checkIfGameOver() == true {
-            let seconds = 2.0
-            let delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
-            var dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
-            dispatch_after(dispatchTime, dispatch_get_main_queue(), {
-                self.performSegueWithIdentifier("toTask2", sender: nil)
-            })
-            
-        }
-
+        shallWeMoveToNextPage()
     }
     
     @IBAction func іButton(sender: UIButton) {
         letterChosed(sender)
-        if checkIfGameOver() == true {
-            let seconds = 2.0
-            let delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
-            var dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
-            dispatch_after(dispatchTime, dispatch_get_main_queue(), {
-                self.performSegueWithIdentifier("toTask2", sender: nil)
-            })
-            
-        }
-
+        shallWeMoveToNextPage()
     }
     
     @IBAction func уButton(sender: UIButton) {
         letterChosed(sender)
-        if checkIfGameOver() == true {
-            let seconds = 2.0
-            let delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
-            var dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
-            dispatch_after(dispatchTime, dispatch_get_main_queue(), {
-                self.performSegueWithIdentifier("toTask2", sender: nil)
-            })
-            
-        }
-
+        shallWeMoveToNextPage()
     }
-
-    
-
 }
