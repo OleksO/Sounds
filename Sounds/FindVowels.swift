@@ -21,7 +21,7 @@ extension Array {
 }
 
 class FindVowels: UIViewController {
-    
+
     
     @IBOutlet weak var startImageOnly: UIImageView!
     
@@ -235,6 +235,15 @@ class FindVowels: UIViewController {
         
         func loadPage(nextPage: Int) {
             
+            var seconds = 1.0
+            var delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
+            var dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+            dispatch_after(dispatchTime, dispatch_get_main_queue(), {
+                
+                self.reloadButton.enabled = true
+                
+            })
+            
             reloadButton.hidden = false
             mainMenuButton.hidden = false
             
@@ -367,6 +376,8 @@ class FindVowels: UIViewController {
     
         func shallWeMoveToNextPage() {
             if gameOver() {
+                
+                reloadButton.enabled = false
                 
                 var seconds = 2.0
                 var delay = seconds * Double(NSEC_PER_SEC)  // nanoseconds per seconds
