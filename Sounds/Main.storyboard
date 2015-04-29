@@ -1,578 +1,404 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D130a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="f2n-Bu-Uj7">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Credentials-->
+        <scene sceneID="HsI-SW-y4c">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sounds" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                <viewController id="bXI-IP-Dfe" customClass="Credentials" customModule="Sounds" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sef-fK-7ja">
+                        <rect key="frame" x="0.0" y="0.0" width="270" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weeds.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="T3u-3c-fpI">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                </variation>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Веселі завдання" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="316-MC-TeV">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="81"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="131" width="736" height="94"/>
-                                </variation>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BoxRed.png" translatesAutoresizingMaskIntoConstraints="NO" id="h6v-LJ-917">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="95" y="363" width="256" height="256"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BoxYellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="n3p-CH-aNv">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="95" y="627" width="256" height="256"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BoxGreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="3m1-az-4Bh">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="417" y="363" width="256" height="256"/>
-                                </variation>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Знайди голосну" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dve-Yx-axt">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Автор ідеї та озвучення:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gya-aV-2YM">
+                                <rect key="frame" x="0.0" y="49" width="270" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="123" y="391" width="200" height="200"/>
-                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Знайди порядок" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oiv-Iy-dDR">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оваденко Тетяна" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uKo-Am-GsS">
+                                <rect key="frame" x="0.0" y="69" width="270" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="445" y="391" width="200" height="200"/>
-                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дивний розмір" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWQ-si-Ihq">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Художник:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3kO-kW-Q9x">
+                                <rect key="frame" x="0.0" y="119" width="270" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="123" y="655" width="200" height="200"/>
-                                </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7B-Zr-MYL">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Гра 1">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="95" y="363" width="256" height="256"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="f2n-Bu-Uj7" kind="show" id="209-m1-bgw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yw2-jt-UTa">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Гра 2">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="417" y="363" width="256" height="256"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="NiV-uW-d5q" kind="show" id="cX5-f5-rou"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53r-X3-jOu">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Гра 3">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="95" y="627" width="256" height="256"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="Rsd-ed-lba" kind="show" id="esa-m7-RBI"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BoxBlue.png" translatesAutoresizingMaskIntoConstraints="NO" id="eh4-Ii-gMd">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="417" y="627" width="256" height="256"/>
-                                </variation>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Харлан Марина" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bOC-Bt-n2P">
+                                <rect key="frame" x="0.0" y="139" width="270" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тестування:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mlE-fG-GrI">
+                                <rect key="frame" x="0.0" y="189" width="270" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Марічка (5 років)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cVz-nQ-Gpa">
+                                <rect key="frame" x="0.0" y="209" width="270" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Даринка (5 років)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xtj-dj-iXh">
+                                <rect key="frame" x="0.0" y="229" width="270" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="T3u-3c-fpI"/>
-                                <exclude reference="316-MC-TeV"/>
-                                <exclude reference="h6v-LJ-917"/>
-                                <exclude reference="n3p-CH-aNv"/>
-                                <exclude reference="3m1-az-4Bh"/>
-                                <exclude reference="dve-Yx-axt"/>
-                                <exclude reference="Oiv-Iy-dDR"/>
-                                <exclude reference="SWQ-si-Ihq"/>
-                                <exclude reference="B7B-Zr-MYL"/>
-                                <exclude reference="yw2-jt-UTa"/>
-                                <exclude reference="53r-X3-jOu"/>
-                                <exclude reference="eh4-Ii-gMd"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=regular">
-                            <mask key="subviews">
-                                <include reference="T3u-3c-fpI"/>
-                                <include reference="316-MC-TeV"/>
-                                <include reference="h6v-LJ-917"/>
-                                <include reference="n3p-CH-aNv"/>
-                                <include reference="3m1-az-4Bh"/>
-                                <include reference="dve-Yx-axt"/>
-                                <include reference="Oiv-Iy-dDR"/>
-                                <include reference="SWQ-si-Ihq"/>
-                                <include reference="B7B-Zr-MYL"/>
-                                <include reference="yw2-jt-UTa"/>
-                                <include reference="53r-X3-jOu"/>
-                                <include reference="eh4-Ii-gMd"/>
-                            </mask>
-                        </variation>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="270" height="300"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="htY-YZ-7lz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="768.75" y="354"/>
+            <point key="canvasLocation" x="2830" y="929"/>
         </scene>
         <!--Find Vowels-->
         <scene sceneID="PjQ-VA-aGW">
             <objects>
                 <viewController id="f2n-Bu-Uj7" customClass="FindVowels" customModule="Sounds" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="00i-YF-de5"/>
-                        <viewControllerLayoutGuide type="bottom" id="oNC-Do-49g"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PKJ-g2-lbK">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miniGamePlayground1.png" translatesAutoresizingMaskIntoConstraints="NO" id="yxG-Ar-LdR">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.5" width="384" height="341.5"/>
-                                </variation>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miniGamePlayground1.png" id="yxG-Ar-LdR">
+                                <rect key="frame" x="0.0" y="-0.5" width="384" height="341.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miniGamePlayground2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wct-rI-8IA">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="384" y="0.5" width="384" height="341.5"/>
-                                </variation>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miniGamePlayground2.png" id="Wct-rI-8IA">
+                                <rect key="frame" x="384" y="-0.5" width="384" height="341.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miniGamePlayground3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rpn-qK-4hf">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="341" width="384" height="341.5"/>
-                                </variation>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miniGamePlayground6.png" id="ewB-gL-mh7">
+                                <rect key="frame" x="0.0" y="340.5" width="384" height="341.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miniGamePlayground4.png" translatesAutoresizingMaskIntoConstraints="NO" id="XTA-cW-MFT">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="384" y="341" width="384" height="341.5"/>
-                                </variation>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miniGamePlayground4.png" id="XTA-cW-MFT">
+                                <rect key="frame" x="384" y="340.5" width="384" height="341.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miniGamePlayground5.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qvz-Pb-Nku">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="682.5" width="384" height="341.5"/>
-                                </variation>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miniGamePlayground5.png" id="Qvz-Pb-Nku">
+                                <rect key="frame" x="0.0" y="682" width="384" height="344"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miniGamePlayground6.png" translatesAutoresizingMaskIntoConstraints="NO" id="ewB-gL-mh7">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="384" y="682.5" width="384" height="341.5"/>
-                                </variation>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miniGamePlayground3.png" id="Rpn-qK-4hf">
+                                <rect key="frame" x="384" y="682" width="384" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VE3-k3-l1o">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="VE3-k3-l1o">
+                                <rect key="frame" x="0.0" y="40" width="384" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="1">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="384" height="341"/>
-                                </variation>
                                 <connections>
                                     <action selector="firstButton:" destination="f2n-Bu-Uj7" eventType="touchUpInside" id="9HY-io-yH1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bez-A7-DR6">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="Bez-A7-DR6">
+                                <rect key="frame" x="384" y="40" width="384" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="2">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="384" y="0.0" width="384" height="341"/>
-                                </variation>
                                 <connections>
                                     <action selector="secondButton:" destination="f2n-Bu-Uj7" eventType="touchUpInside" id="UR0-1e-HHO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqh-Q3-Mhy">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="Sqh-Q3-Mhy">
+                                <rect key="frame" x="0.0" y="380" width="384" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="3">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="340" width="384" height="341"/>
-                                </variation>
                                 <connections>
                                     <action selector="thirdButton:" destination="f2n-Bu-Uj7" eventType="touchUpInside" id="BdP-Dg-E94"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOx-6h-Kky">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="IOx-6h-Kky">
+                                <rect key="frame" x="384" y="380" width="384" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="4">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="384" y="340" width="384" height="341"/>
-                                </variation>
                                 <connections>
                                     <action selector="fourthButton:" destination="f2n-Bu-Uj7" eventType="touchUpInside" id="bFN-QI-DyI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2B-1X-fU0">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="u2B-1X-fU0">
+                                <rect key="frame" x="0.0" y="723" width="384" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="5">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="683" width="384" height="341"/>
-                                </variation>
                                 <connections>
                                     <action selector="fifthButton:" destination="f2n-Bu-Uj7" eventType="touchUpInside" id="Uet-jo-ZZG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1En-LW-msn">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="1En-LW-msn">
+                                <rect key="frame" x="384" y="723" width="384" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="6">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="384" y="685" width="384" height="341"/>
-                                </variation>
                                 <connections>
                                     <action selector="sixthButton:" destination="f2n-Bu-Uj7" eventType="touchUpInside" id="BkG-8Z-Hqf"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcj-Ak-uCc">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="40"/>
-                                <state key="normal" title="Е">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Zcj-Ak-uCc">
+                                <rect key="frame" x="16" y="20" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <state key="normal" title="Е" backgroundImage="button3.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="20" width="60" height="60"/>
-                                </variation>
                                 <connections>
                                     <action selector="еButton:" destination="f2n-Bu-Uj7" eventType="touchUpInside" id="lZW-PA-qa8"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOz-Uo-BAT">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="40"/>
-                                <state key="normal" title="О">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LOz-Uo-BAT">
+                                <rect key="frame" x="15" y="100" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <state key="normal" title="О" backgroundImage="button3.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="15" y="100" width="60" height="60"/>
-                                </variation>
                                 <connections>
                                     <action selector="оButton:" destination="f2n-Bu-Uj7" eventType="touchUpInside" id="rN9-z0-Des"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8a9-oc-WE3">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="40"/>
-                                <state key="normal" title="А">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8a9-oc-WE3">
+                                <rect key="frame" x="16" y="180" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <state key="normal" title="А" backgroundImage="button3.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="180" width="60" height="60"/>
-                                </variation>
                                 <connections>
                                     <action selector="аButton:" destination="f2n-Bu-Uj7" eventType="touchUpInside" id="xMq-rh-5TO"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i95-lb-Lyq">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="40"/>
-                                <state key="normal" title="И">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="i95-lb-Lyq">
+                                <rect key="frame" x="309" y="20" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <state key="normal" title="И" backgroundImage="button3.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="309" y="20" width="60" height="60"/>
-                                </variation>
                                 <connections>
                                     <action selector="иButton:" destination="f2n-Bu-Uj7" eventType="touchUpInside" id="khp-E9-Y7A"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkY-07-7cN">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="40"/>
-                                <state key="normal" title="І">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PkY-07-7cN">
+                                <rect key="frame" x="309" y="100" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <state key="normal" title="І" backgroundImage="button3.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="309" y="100" width="60" height="60"/>
-                                </variation>
                                 <connections>
                                     <action selector="іButton:" destination="f2n-Bu-Uj7" eventType="touchUpInside" id="tE6-pw-y4e"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pd-Az-VXr">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="40"/>
-                                <state key="normal" title="У">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4pd-Az-VXr">
+                                <rect key="frame" x="309" y="180" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <state key="normal" title="У" backgroundImage="button3.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="309" y="180" width="60" height="60"/>
-                                </variation>
                                 <connections>
                                     <action selector="уButton:" destination="f2n-Bu-Uj7" eventType="touchUpInside" id="EK8-BE-Jgg"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmn-dZ-V7y">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vmn-dZ-V7y">
+                                <rect key="frame" x="116" y="298" width="152" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.029999999999999999" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="116" y="298" width="152" height="40"/>
-                                </variation>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pk-NL-SgN">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7pk-NL-SgN">
+                                <rect key="frame" x="500" y="298" width="152" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.029999999999999999" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="500" y="298" width="152" height="40"/>
-                                </variation>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="НІШ С" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34s-Se-c4o">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="НІШ С" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="34s-Se-c4o">
+                                <rect key="frame" x="116" y="639" width="152" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.029999999999999999" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="116" y="639" width="152" height="40"/>
-                                </variation>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qo2-z3-Ofd">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qo2-z3-Ofd">
+                                <rect key="frame" x="500" y="639" width="152" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.029999999999999999" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="500" y="639" width="152" height="40"/>
-                                </variation>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cR0-D6-Vwj">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cR0-D6-Vwj">
+                                <rect key="frame" x="116" y="981" width="152" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.029999999999999999" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="116" y="981" width="152" height="40"/>
-                                </variation>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoJ-GZ-OMv">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YoJ-GZ-OMv">
+                                <rect key="frame" x="500" y="981" width="152" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.029999999999999999" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="500" y="981" width="152" height="40"/>
-                                </variation>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDX-qN-vCU">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IDX-qN-vCU">
+                                <rect key="frame" x="116" y="298" width="152" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.029999999999999999" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="116" y="298" width="152" height="40"/>
-                                </variation>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W93-bY-u5v">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W93-bY-u5v">
+                                <rect key="frame" x="500" y="298" width="152" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.029999999999999999" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="500" y="298" width="152" height="40"/>
-                                </variation>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaX-Dr-8hL">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CaX-Dr-8hL">
+                                <rect key="frame" x="500" y="639" width="152" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.029999999999999999" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="500" y="639" width="152" height="40"/>
-                                </variation>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4H-Bc-b2G">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R4H-Bc-b2G">
+                                <rect key="frame" x="116" y="981" width="152" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.029999999999999999" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="116" y="981" width="152" height="40"/>
-                                </variation>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAe-Z5-EAh">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UAe-Z5-EAh">
+                                <rect key="frame" x="500" y="981" width="152" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.029999999999999999" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="500" y="981" width="152" height="40"/>
-                                </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="5FH-Zj-Bp7">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="14" y="947" width="43" height="60"/>
-                                </variation>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="НІ ШС" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qGZ-Cr-0gA">
+                                <rect key="frame" x="116" y="639" width="152" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.029999999999999999" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starting.png" id="73a-Mg-xQM">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ke-BZ-gZj" userLabel="Menu">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8Ke-BZ-gZj" userLabel="back">
+                                <rect key="frame" x="0.0" y="984" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backarrow.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="endGame:" destination="f2n-Bu-Uj7" eventType="touchUpInside" id="X5F-Se-bhv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="p0H-CP-XfU" userLabel="reload">
+                                <rect key="frame" x="728" y="984" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="reload.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextPage:" destination="f2n-Bu-Uj7" eventType="touchUpInside" id="oIp-oe-680"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play_overlay_no_circle.png" id="LPp-Ga-cGM">
+                                <rect key="frame" x="685" y="968" width="129" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Prd-Xc-Rb7" userLabel="start">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="14" y="947" width="43" height="60"/>
-                                </variation>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="zC7-2a-34N"/>
+                                    <action selector="startGame:" destination="f2n-Bu-Uj7" eventType="touchUpInside" id="Buv-sA-idX"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="НІ ШС" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGZ-Cr-0gA">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="116" y="639" width="152" height="40"/>
-                                </variation>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="sAm-Jb-ZdI" userLabel="info">
+                                <rect key="frame" x="4" y="987" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="infonew.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bXI-IP-Dfe" kind="popover" popoverAnchorView="sAm-Jb-ZdI" id="rfd-Vo-zHN">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="yxG-Ar-LdR"/>
-                                <exclude reference="Wct-rI-8IA"/>
-                                <exclude reference="Rpn-qK-4hf"/>
-                                <exclude reference="XTA-cW-MFT"/>
-                                <exclude reference="Qvz-Pb-Nku"/>
-                                <exclude reference="ewB-gL-mh7"/>
-                                <exclude reference="VE3-k3-l1o"/>
-                                <exclude reference="Bez-A7-DR6"/>
-                                <exclude reference="Sqh-Q3-Mhy"/>
-                                <exclude reference="IOx-6h-Kky"/>
-                                <exclude reference="u2B-1X-fU0"/>
-                                <exclude reference="1En-LW-msn"/>
-                                <exclude reference="Zcj-Ak-uCc"/>
-                                <exclude reference="LOz-Uo-BAT"/>
-                                <exclude reference="8a9-oc-WE3"/>
-                                <exclude reference="i95-lb-Lyq"/>
-                                <exclude reference="PkY-07-7cN"/>
-                                <exclude reference="4pd-Az-VXr"/>
-                                <exclude reference="vmn-dZ-V7y"/>
-                                <exclude reference="7pk-NL-SgN"/>
-                                <exclude reference="34s-Se-c4o"/>
-                                <exclude reference="Qo2-z3-Ofd"/>
-                                <exclude reference="cR0-D6-Vwj"/>
-                                <exclude reference="YoJ-GZ-OMv"/>
-                                <exclude reference="IDX-qN-vCU"/>
-                                <exclude reference="W93-bY-u5v"/>
-                                <exclude reference="CaX-Dr-8hL"/>
-                                <exclude reference="R4H-Bc-b2G"/>
-                                <exclude reference="UAe-Z5-EAh"/>
-                                <exclude reference="5FH-Zj-Bp7"/>
-                                <exclude reference="8Ke-BZ-gZj"/>
-                                <exclude reference="qGZ-Cr-0gA"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=regular">
-                            <mask key="subviews">
-                                <include reference="yxG-Ar-LdR"/>
-                                <include reference="Wct-rI-8IA"/>
-                                <include reference="Rpn-qK-4hf"/>
-                                <include reference="XTA-cW-MFT"/>
-                                <include reference="Qvz-Pb-Nku"/>
-                                <include reference="ewB-gL-mh7"/>
-                                <include reference="VE3-k3-l1o"/>
-                                <include reference="Bez-A7-DR6"/>
-                                <include reference="Sqh-Q3-Mhy"/>
-                                <include reference="IOx-6h-Kky"/>
-                                <include reference="u2B-1X-fU0"/>
-                                <include reference="1En-LW-msn"/>
-                                <include reference="Zcj-Ak-uCc"/>
-                                <include reference="LOz-Uo-BAT"/>
-                                <include reference="8a9-oc-WE3"/>
-                                <include reference="i95-lb-Lyq"/>
-                                <include reference="PkY-07-7cN"/>
-                                <include reference="4pd-Az-VXr"/>
-                                <include reference="vmn-dZ-V7y"/>
-                                <include reference="7pk-NL-SgN"/>
-                                <include reference="34s-Se-c4o"/>
-                                <include reference="Qo2-z3-Ofd"/>
-                                <include reference="cR0-D6-Vwj"/>
-                                <include reference="YoJ-GZ-OMv"/>
-                                <include reference="IDX-qN-vCU"/>
-                                <include reference="W93-bY-u5v"/>
-                                <include reference="CaX-Dr-8hL"/>
-                                <include reference="R4H-Bc-b2G"/>
-                                <include reference="UAe-Z5-EAh"/>
-                                <include reference="5FH-Zj-Bp7"/>
-                                <include reference="8Ke-BZ-gZj"/>
-                                <include reference="qGZ-Cr-0gA"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="vhf-bp-8Yw">
-                        <barButtonItem key="rightBarButtonItem" title="Завдання 2" id="Vrd-TN-M0D"/>
-                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="768" height="1024"/>
                     <connections>
+                        <outlet property="infoButtonIcon" destination="sAm-Jb-ZdI" id="NO9-rI-eIZ"/>
+                        <outlet property="mainMenuButton" destination="8Ke-BZ-gZj" id="Dnj-e4-320"/>
+                        <outlet property="mainScreen" destination="73a-Mg-xQM" id="OEn-c4-nuR"/>
+                        <outlet property="reloadButton" destination="p0H-CP-XfU" id="2hQ-FA-C9o"/>
+                        <outlet property="startButton" destination="Prd-Xc-Rb7" id="vvp-CN-bZ6"/>
+                        <outlet property="startImageOnly" destination="LPp-Ga-cGM" id="zv2-Sk-MWU"/>
                         <outletCollection property="lettersButtons" destination="Zcj-Ak-uCc" collectionClass="NSMutableArray" id="UZN-E9-vuC"/>
                         <outletCollection property="lettersButtons" destination="LOz-Uo-BAT" collectionClass="NSMutableArray" id="ueY-dp-5s6"/>
                         <outletCollection property="lettersButtons" destination="8a9-oc-WE3" collectionClass="NSMutableArray" id="s5t-cO-0N1"/>
@@ -597,634 +423,36 @@
                         <outletCollection property="answerLabels" destination="CaX-Dr-8hL" collectionClass="NSMutableArray" id="Tpn-23-Vbh"/>
                         <outletCollection property="answerLabels" destination="R4H-Bc-b2G" collectionClass="NSMutableArray" id="O4v-Al-lJL"/>
                         <outletCollection property="answerLabels" destination="UAe-Z5-EAh" collectionClass="NSMutableArray" id="ANM-gl-jBu"/>
+                        <outletCollection property="pageBackgrounds" destination="yxG-Ar-LdR" collectionClass="NSMutableArray" id="lML-u0-GtK"/>
+                        <outletCollection property="pageBackgrounds" destination="Wct-rI-8IA" collectionClass="NSMutableArray" id="ohr-Y0-oAu"/>
+                        <outletCollection property="pageBackgrounds" destination="Rpn-qK-4hf" collectionClass="NSMutableArray" id="4sE-eq-lZR"/>
+                        <outletCollection property="pageBackgrounds" destination="XTA-cW-MFT" collectionClass="NSMutableArray" id="DTs-lD-gvI"/>
+                        <outletCollection property="pageBackgrounds" destination="Qvz-Pb-Nku" collectionClass="NSMutableArray" id="PFA-GJ-cnk"/>
+                        <outletCollection property="pageBackgrounds" destination="ewB-gL-mh7" collectionClass="NSMutableArray" id="bMS-6d-5fz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaO-nM-Qnw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1734.75" y="354"/>
-        </scene>
-        <!--Mixed Letters-->
-        <scene sceneID="GtY-lI-fjs">
-            <objects>
-                <viewController id="NiV-uW-d5q" customClass="MixedLetters" customModule="Sounds" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KRq-Pb-Mp5"/>
-                        <viewControllerLayoutGuide type="bottom" id="wqg-5b-dOT"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JT6-Pw-86v">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundGreenStrips.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cu6-vy-hZg">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="н.png" translatesAutoresizingMaskIntoConstraints="NO" id="VpO-38-hZ3">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="172" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m88-Nk-Msf">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Н">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="172" y="83" width="40" height="40"/>
-                                </variation>
-                                <connections>
-                                    <action selector="нПеньButton:" destination="NiV-uW-d5q" eventType="touchUpInside" id="RHH-kc-PwY"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ь.png" translatesAutoresizingMaskIntoConstraints="NO" id="K99-rP-Zux">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="220" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlp-Kt-VWM">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Ь">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="220" y="83" width="40" height="40"/>
-                                </variation>
-                                <connections>
-                                    <action selector="ьПеньButton:" destination="NiV-uW-d5q" eventType="touchUpInside" id="MCu-BM-wnS"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="п.png" translatesAutoresizingMaskIntoConstraints="NO" id="GTQ-C4-9fX">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="268" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUs-r8-jH1">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="П">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="268" y="83" width="40" height="40"/>
-                                </variation>
-                                <connections>
-                                    <action selector="пПеньButton:" destination="NiV-uW-d5q" eventType="touchUpInside" id="7ck-NY-prK"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="е.png" translatesAutoresizingMaskIntoConstraints="NO" id="bQF-fa-FwV">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="316" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqi-zx-znL">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Е">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="316" y="83" width="40" height="40"/>
-                                </variation>
-                                <connections>
-                                    <action selector="еПеньButton:" destination="NiV-uW-d5q" eventType="touchUpInside" id="Lms-Bt-WVC"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="SNW-f3-SYm">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="412" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="qHh-1U-Xya">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="460" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="hLd-L9-udZ">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="556" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="UiL-Ij-f4h">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="508" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="п.png" translatesAutoresizingMaskIntoConstraints="NO" id="YB4-nD-iQ7">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="412" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="е.png" translatesAutoresizingMaskIntoConstraints="NO" id="f70-aX-3Gl">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="460" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="н.png" translatesAutoresizingMaskIntoConstraints="NO" id="WRM-G8-yQE">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="508" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ь.png" translatesAutoresizingMaskIntoConstraints="NO" id="IBA-qh-BDs">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="556" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="r7c-iw-0GD">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="10" y="959" width="59" height="57"/>
-                                </variation>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0U-0a-z34">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="10" y="959" width="59" height="57"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Wbj-dL-4Qg"/>
-                                </connections>
-                            </button>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="g0R-Wj-EfN">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="124" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="UGx-Jv-e0R">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="604" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="iVo-D7-IDd">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="652" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="4uH-GF-NKW">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="700" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="e4f-Al-hch">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="76" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="Byu-CD-0xi">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="29" y="83" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Y2j-We-wti">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Показать сколько букв может быть в слове при таком размере кубика">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="218" y="147" width="333" height="74"/>
-                                </variation>
-                                <connections>
-                                    <action selector="showMaxCapacityOfTheLine:" destination="NiV-uW-d5q" eventType="touchUpInside" id="Dn8-pa-3LE"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Cu6-vy-hZg"/>
-                                <exclude reference="VpO-38-hZ3"/>
-                                <exclude reference="m88-Nk-Msf"/>
-                                <exclude reference="K99-rP-Zux"/>
-                                <exclude reference="jlp-Kt-VWM"/>
-                                <exclude reference="GTQ-C4-9fX"/>
-                                <exclude reference="GUs-r8-jH1"/>
-                                <exclude reference="bQF-fa-FwV"/>
-                                <exclude reference="Rqi-zx-znL"/>
-                                <exclude reference="SNW-f3-SYm"/>
-                                <exclude reference="qHh-1U-Xya"/>
-                                <exclude reference="hLd-L9-udZ"/>
-                                <exclude reference="UiL-Ij-f4h"/>
-                                <exclude reference="YB4-nD-iQ7"/>
-                                <exclude reference="f70-aX-3Gl"/>
-                                <exclude reference="WRM-G8-yQE"/>
-                                <exclude reference="IBA-qh-BDs"/>
-                                <exclude reference="r7c-iw-0GD"/>
-                                <exclude reference="h0U-0a-z34"/>
-                                <exclude reference="g0R-Wj-EfN"/>
-                                <exclude reference="UGx-Jv-e0R"/>
-                                <exclude reference="iVo-D7-IDd"/>
-                                <exclude reference="4uH-GF-NKW"/>
-                                <exclude reference="e4f-Al-hch"/>
-                                <exclude reference="Byu-CD-0xi"/>
-                                <exclude reference="Y2j-We-wti"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=regular">
-                            <mask key="subviews">
-                                <include reference="Cu6-vy-hZg"/>
-                                <include reference="VpO-38-hZ3"/>
-                                <include reference="m88-Nk-Msf"/>
-                                <include reference="K99-rP-Zux"/>
-                                <include reference="jlp-Kt-VWM"/>
-                                <include reference="GTQ-C4-9fX"/>
-                                <include reference="GUs-r8-jH1"/>
-                                <include reference="bQF-fa-FwV"/>
-                                <include reference="Rqi-zx-znL"/>
-                                <include reference="SNW-f3-SYm"/>
-                                <include reference="qHh-1U-Xya"/>
-                                <include reference="hLd-L9-udZ"/>
-                                <include reference="UiL-Ij-f4h"/>
-                                <include reference="YB4-nD-iQ7"/>
-                                <include reference="f70-aX-3Gl"/>
-                                <include reference="WRM-G8-yQE"/>
-                                <include reference="IBA-qh-BDs"/>
-                                <include reference="r7c-iw-0GD"/>
-                                <include reference="h0U-0a-z34"/>
-                                <include reference="g0R-Wj-EfN"/>
-                                <include reference="UGx-Jv-e0R"/>
-                                <include reference="iVo-D7-IDd"/>
-                                <include reference="4uH-GF-NKW"/>
-                                <include reference="e4f-Al-hch"/>
-                                <include reference="Byu-CD-0xi"/>
-                                <include reference="Y2j-We-wti"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="768" height="1024"/>
-                    <connections>
-                        <outletCollection property="пеньCorrectImages" destination="YB4-nD-iQ7" collectionClass="NSMutableArray" id="Qni-me-6pC"/>
-                        <outletCollection property="пеньCorrectImages" destination="f70-aX-3Gl" collectionClass="NSMutableArray" id="7H0-yy-fpD"/>
-                        <outletCollection property="пеньCorrectImages" destination="WRM-G8-yQE" collectionClass="NSMutableArray" id="Qf7-A2-XSx"/>
-                        <outletCollection property="пеньCorrectImages" destination="IBA-qh-BDs" collectionClass="NSMutableArray" id="b2W-HJ-sZw"/>
-                        <outletCollection property="пеньButtons" destination="m88-Nk-Msf" collectionClass="NSMutableArray" id="xZz-EX-whi"/>
-                        <outletCollection property="пеньButtons" destination="jlp-Kt-VWM" collectionClass="NSMutableArray" id="sPj-OT-Q4A"/>
-                        <outletCollection property="пеньButtons" destination="GUs-r8-jH1" collectionClass="NSMutableArray" id="OHU-gf-oe4"/>
-                        <outletCollection property="пеньButtons" destination="Rqi-zx-znL" collectionClass="NSMutableArray" id="mQy-JO-niV"/>
-                        <outletCollection property="emptySpaces" destination="iVo-D7-IDd" collectionClass="NSMutableArray" id="X7d-Fu-AHS"/>
-                        <outletCollection property="emptySpaces" destination="g0R-Wj-EfN" collectionClass="NSMutableArray" id="Qe1-Y3-jF1"/>
-                        <outletCollection property="emptySpaces" destination="UGx-Jv-e0R" collectionClass="NSMutableArray" id="LrX-wx-80I"/>
-                        <outletCollection property="emptySpaces" destination="iVo-D7-IDd" collectionClass="NSMutableArray" id="z4K-8h-bLm"/>
-                        <outletCollection property="emptySpaces" destination="4uH-GF-NKW" collectionClass="NSMutableArray" id="Ahi-qx-qIv"/>
-                        <outletCollection property="emptySpaces" destination="e4f-Al-hch" collectionClass="NSMutableArray" id="qsT-Yc-8Yg"/>
-                        <outletCollection property="emptySpaces" destination="Byu-CD-0xi" collectionClass="NSMutableArray" id="9ag-tx-AFS"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7zY-0j-6dt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1734.75" y="1245.75"/>
-        </scene>
-        <!--Mixed Sizes-->
-        <scene sceneID="Zg0-kx-deV">
-            <objects>
-                <viewController id="Rsd-ed-lba" customClass="MixedSizes" customModule="Sounds" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Pdw-gF-tqH"/>
-                        <viewControllerLayoutGuide type="bottom" id="r7c-e3-EeS"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NkO-zq-ype">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundYellowStrips1.png" translatesAutoresizingMaskIntoConstraints="NO" id="zxP-f3-R0M">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="н.png" translatesAutoresizingMaskIntoConstraints="NO" id="P9z-Sp-wog">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="42" y="59" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTY-bg-Y5k">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Н">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="42" y="59" width="40" height="40"/>
-                                </variation>
-                                <connections>
-                                    <action selector="нПеньButton:" destination="NiV-uW-d5q" eventType="touchUpInside" id="FE0-D2-5Rd"/>
-                                    <action selector="нПеньButton:" destination="Rsd-ed-lba" eventType="touchUpInside" id="WaD-8O-Rma"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ь.png" translatesAutoresizingMaskIntoConstraints="NO" id="2c9-mk-Slg">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="90" y="54" width="45" height="45"/>
-                                </variation>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvV-ek-m8w">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Ь">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="90" y="54" width="45" height="45"/>
-                                </variation>
-                                <connections>
-                                    <action selector="ьПеньButton:" destination="NiV-uW-d5q" eventType="touchUpInside" id="IdW-bF-Y6e"/>
-                                    <action selector="ьПеньButton:" destination="Rsd-ed-lba" eventType="touchUpInside" id="RhP-UR-OJ7"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="п.png" translatesAutoresizingMaskIntoConstraints="NO" id="VS0-Qt-daZ">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="143" y="69" width="30" height="30"/>
-                                </variation>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gw6-SZ-qDP">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="П">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="143" y="69" width="30" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="пПеньButton:" destination="Rsd-ed-lba" eventType="touchUpInside" id="Yng-x1-lVg"/>
-                                    <action selector="пПеньButton:" destination="NiV-uW-d5q" eventType="touchUpInside" id="aZV-ef-eTq"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="е.png" translatesAutoresizingMaskIntoConstraints="NO" id="49S-3W-vix">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="244" y="64" width="35" height="35"/>
-                                </variation>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWk-8c-7xM">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Е">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="244" y="64" width="35" height="35"/>
-                                </variation>
-                                <connections>
-                                    <action selector="еПеньButton:" destination="NiV-uW-d5q" eventType="touchUpInside" id="0Q5-jo-N83"/>
-                                    <action selector="еПеньButton:" destination="Rsd-ed-lba" eventType="touchUpInside" id="KuV-9T-GTw"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="о.png" translatesAutoresizingMaskIntoConstraints="NO" id="vUf-dp-tDR">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="287" y="49" width="50" height="50"/>
-                                </variation>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioR-g8-NNx">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="О">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="287" y="49" width="50" height="50"/>
-                                </variation>
-                                <connections>
-                                    <action selector="оПеньButton:" destination="Rsd-ed-lba" eventType="touchUpInside" id="ttu-nV-hqw"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="к.png" translatesAutoresizingMaskIntoConstraints="NO" id="cSg-SX-GGJ">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="181" y="44" width="55" height="55"/>
-                                </variation>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsW-JJ-UDk">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="К">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="181" y="44" width="55" height="55"/>
-                                </variation>
-                                <connections>
-                                    <action selector="кПеньButton:" destination="Rsd-ed-lba" eventType="touchUpInside" id="D8B-TG-5le"/>
-                                </connections>
-                            </button>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="п.png" translatesAutoresizingMaskIntoConstraints="NO" id="zZe-NK-GMl">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="432" y="69" width="30" height="30"/>
-                                </variation>
-                            </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="е.png" translatesAutoresizingMaskIntoConstraints="NO" id="aFh-tg-MfC">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="470" y="64" width="35" height="35"/>
-                                </variation>
-                            </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="н.png" translatesAutoresizingMaskIntoConstraints="NO" id="oPG-9X-Hnz">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="513" y="59" width="40" height="40"/>
-                                </variation>
-                            </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ь.png" translatesAutoresizingMaskIntoConstraints="NO" id="AzS-yP-YDK">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="561" y="54" width="45" height="45"/>
-                                </variation>
-                            </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="о.png" translatesAutoresizingMaskIntoConstraints="NO" id="Axy-Mb-CVb">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="614" y="49" width="50" height="50"/>
-                                </variation>
-                            </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="к.png" translatesAutoresizingMaskIntoConstraints="NO" id="j4E-0u-dPo">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="672" y="44" width="55" height="55"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backYellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="yBh-rd-ufE">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="8" y="959" width="59" height="57"/>
-                                </variation>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NX-aS-d0q">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="8" y="959" width="59" height="57"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Er9-wG-O7P"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame_100.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kvo-S4-RMC">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="548" y="721" width="267" height="295"/>
-                                </variation>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEc-j4-XXn">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="611" y="721" width="125" height="295"/>
-                                </variation>
-                                <connections>
-                                    <action selector="theDance:" destination="Rsd-ed-lba" eventType="touchUpInside" id="Tf1-Pw-8lQ"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="zxP-f3-R0M"/>
-                                <exclude reference="P9z-Sp-wog"/>
-                                <exclude reference="CTY-bg-Y5k"/>
-                                <exclude reference="2c9-mk-Slg"/>
-                                <exclude reference="ZvV-ek-m8w"/>
-                                <exclude reference="VS0-Qt-daZ"/>
-                                <exclude reference="Gw6-SZ-qDP"/>
-                                <exclude reference="49S-3W-vix"/>
-                                <exclude reference="FWk-8c-7xM"/>
-                                <exclude reference="vUf-dp-tDR"/>
-                                <exclude reference="ioR-g8-NNx"/>
-                                <exclude reference="cSg-SX-GGJ"/>
-                                <exclude reference="wsW-JJ-UDk"/>
-                                <exclude reference="zZe-NK-GMl"/>
-                                <exclude reference="aFh-tg-MfC"/>
-                                <exclude reference="oPG-9X-Hnz"/>
-                                <exclude reference="AzS-yP-YDK"/>
-                                <exclude reference="Axy-Mb-CVb"/>
-                                <exclude reference="j4E-0u-dPo"/>
-                                <exclude reference="yBh-rd-ufE"/>
-                                <exclude reference="2NX-aS-d0q"/>
-                                <exclude reference="Kvo-S4-RMC"/>
-                                <exclude reference="eEc-j4-XXn"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=regular">
-                            <mask key="subviews">
-                                <include reference="zxP-f3-R0M"/>
-                                <include reference="P9z-Sp-wog"/>
-                                <include reference="CTY-bg-Y5k"/>
-                                <include reference="2c9-mk-Slg"/>
-                                <include reference="ZvV-ek-m8w"/>
-                                <include reference="VS0-Qt-daZ"/>
-                                <include reference="Gw6-SZ-qDP"/>
-                                <include reference="49S-3W-vix"/>
-                                <include reference="FWk-8c-7xM"/>
-                                <include reference="vUf-dp-tDR"/>
-                                <include reference="ioR-g8-NNx"/>
-                                <include reference="cSg-SX-GGJ"/>
-                                <include reference="wsW-JJ-UDk"/>
-                                <include reference="zZe-NK-GMl"/>
-                                <include reference="aFh-tg-MfC"/>
-                                <include reference="oPG-9X-Hnz"/>
-                                <include reference="AzS-yP-YDK"/>
-                                <include reference="Axy-Mb-CVb"/>
-                                <include reference="j4E-0u-dPo"/>
-                                <include reference="yBh-rd-ufE"/>
-                                <include reference="2NX-aS-d0q"/>
-                                <include reference="Kvo-S4-RMC"/>
-                                <include reference="eEc-j4-XXn"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="768" height="1024"/>
-                    <connections>
-                        <outlet property="dancingGirl" destination="Kvo-S4-RMC" id="EVB-7R-XTG"/>
-                        <outletCollection property="пеньIncorrectImages" destination="P9z-Sp-wog" collectionClass="NSMutableArray" id="YhA-6c-8Wn"/>
-                        <outletCollection property="пеньIncorrectImages" destination="2c9-mk-Slg" collectionClass="NSMutableArray" id="HgD-5P-35a"/>
-                        <outletCollection property="пеньIncorrectImages" destination="VS0-Qt-daZ" collectionClass="NSMutableArray" id="9IP-XW-b8A"/>
-                        <outletCollection property="пеньIncorrectImages" destination="49S-3W-vix" collectionClass="NSMutableArray" id="WKH-HT-N4I"/>
-                        <outletCollection property="пеньButtons" destination="CTY-bg-Y5k" collectionClass="NSMutableArray" id="yTZ-wM-dDx"/>
-                        <outletCollection property="пеньButtons" destination="ZvV-ek-m8w" collectionClass="NSMutableArray" id="NvE-6e-XhH"/>
-                        <outletCollection property="пеньButtons" destination="Gw6-SZ-qDP" collectionClass="NSMutableArray" id="mlV-BX-BmG"/>
-                        <outletCollection property="пеньButtons" destination="FWk-8c-7xM" collectionClass="NSMutableArray" id="wDP-h4-GyL"/>
-                        <outletCollection property="пеньCorrectImages" destination="zZe-NK-GMl" collectionClass="NSMutableArray" id="K8I-Wx-IUW"/>
-                        <outletCollection property="пеньCorrectImages" destination="aFh-tg-MfC" collectionClass="NSMutableArray" id="9q3-Pg-aai"/>
-                        <outletCollection property="пеньCorrectImages" destination="oPG-9X-Hnz" collectionClass="NSMutableArray" id="yMb-6k-4Z0"/>
-                        <outletCollection property="пеньCorrectImages" destination="AzS-yP-YDK" collectionClass="NSMutableArray" id="WaA-My-DBo"/>
-                        <outletCollection property="пеньButtons" destination="wsW-JJ-UDk" collectionClass="NSMutableArray" id="Ndm-yi-Nr4"/>
-                        <outletCollection property="пеньButtons" destination="ioR-g8-NNx" collectionClass="NSMutableArray" id="CRT-65-2ES"/>
-                        <outletCollection property="пеньCorrectImages" destination="Axy-Mb-CVb" collectionClass="NSMutableArray" id="Ujo-oO-V9T"/>
-                        <outletCollection property="пеньCorrectImages" destination="j4E-0u-dPo" collectionClass="NSMutableArray" id="ex8-I4-79W"/>
-                        <outletCollection property="пеньCorrectImages" destination="cSg-SX-GGJ" collectionClass="NSMutableArray" id="nLp-fJ-MOv"/>
-                        <outletCollection property="пеньCorrectImages" destination="vUf-dp-tDR" collectionClass="NSMutableArray" id="5Ei-WF-AEl"/>
-                        <outletCollection property="пеньIncorrectImages" destination="cSg-SX-GGJ" collectionClass="NSMutableArray" id="HJl-HZ-Kd1"/>
-                        <outletCollection property="пеньIncorrectImages" destination="vUf-dp-tDR" collectionClass="NSMutableArray" id="g7F-ZA-VRI"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LUZ-X3-mS7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1734.75" y="2149.5"/>
+            <point key="canvasLocation" x="2220" y="604"/>
         </scene>
     </scenes>
     <resources>
-        <image name="BoxBlue.png" width="256" height="256"/>
-        <image name="BoxGreen.png" width="256" height="256"/>
-        <image name="BoxRed.png" width="256" height="256"/>
-        <image name="BoxYellow.png" width="256" height="256"/>
-        <image name="backButton.png" width="84" height="119"/>
-        <image name="backYellow.png" width="170" height="172"/>
-        <image name="backgroundGreenStrips.png" width="1536" height="2048"/>
-        <image name="backgroundYellowStrips1.png" width="1536" height="2048"/>
-        <image name="empty.png" width="56" height="56"/>
-        <image name="frame_100.png" width="350" height="380"/>
-        <image name="menuButton.png" width="112" height="116"/>
+        <image name="backarrow.png" width="128" height="128"/>
+        <image name="button3.png" width="100" height="100"/>
+        <image name="infonew.png" width="128" height="128"/>
         <image name="miniGamePlayground1.png" width="768" height="682"/>
         <image name="miniGamePlayground2.png" width="768" height="682"/>
         <image name="miniGamePlayground3.png" width="768" height="682"/>
         <image name="miniGamePlayground4.png" width="768" height="682"/>
         <image name="miniGamePlayground5.png" width="768" height="682"/>
         <image name="miniGamePlayground6.png" width="768" height="682"/>
-        <image name="weeds.jpg" width="768" height="1024"/>
-        <image name="е.png" width="56" height="56"/>
-        <image name="к.png" width="56" height="56"/>
-        <image name="н.png" width="56" height="56"/>
-        <image name="о.png" width="56" height="56"/>
-        <image name="п.png" width="56" height="56"/>
-        <image name="ь.png" width="56" height="56"/>
+        <image name="play_overlay_no_circle.png" width="645" height="360"/>
+        <image name="reload.png" width="128" height="128"/>
+        <image name="starting.png" width="1536" height="2048"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="zC7-2a-34N"/>
-    </inferredMetricsTieBreakers>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
 </document>

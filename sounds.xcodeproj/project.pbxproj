@@ -8,78 +8,179 @@
 
 /* Begin PBXBuildFile section */
 		AB04CB3F1ACD56F500215976 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB04CB3E1ACD56F500215976 /* AppDelegate.swift */; };
-		AB04CB411ACD56F500215976 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB04CB401ACD56F500215976 /* ViewController.swift */; };
 		AB04CB491ACD56F500215976 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB04CB471ACD56F500215976 /* LaunchScreen.xib */; };
 		AB04CB551ACD56F500215976 /* SoundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB04CB541ACD56F500215976 /* SoundsTests.swift */; };
 		AB04CB5F1ACD57C700215976 /* FindVowels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB04CB5E1ACD57C700215976 /* FindVowels.swift */; };
-		AB2F18AD1AD138AD000C9C4F /* MixedLetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2F18AC1AD138AD000C9C4F /* MixedLetters.swift */; };
-		AB2F18B01AD14C99000C9C4F /* backgroundGreenStrips.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2F18AE1AD14C99000C9C4F /* backgroundGreenStrips.png */; };
-		AB2F18B11AD14C99000C9C4F /* menuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2F18AF1AD14C99000C9C4F /* menuButton.png */; };
-		AB2F18B31AD16A15000C9C4F /* MixedSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2F18B21AD16A15000C9C4F /* MixedSizes.swift */; };
-		AB2F18B71AD1AA58000C9C4F /* backgroundYellowStrips1.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2F18B61AD1AA58000C9C4F /* backgroundYellowStrips1.png */; };
-		AB2F18D81AD1B7B0000C9C4F /* frame_002.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2F18CF1AD1B7B0000C9C4F /* frame_002.png */; };
-		AB2F18D91AD1B7B0000C9C4F /* frame_003.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2F18D01AD1B7B0000C9C4F /* frame_003.png */; };
-		AB2F18DA1AD1B7B0000C9C4F /* frame_004.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2F18D11AD1B7B0000C9C4F /* frame_004.png */; };
-		AB2F18DB1AD1B7B0000C9C4F /* frame_005.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2F18D21AD1B7B0000C9C4F /* frame_005.png */; };
-		AB2F18DC1AD1B7B0000C9C4F /* frame_006.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2F18D31AD1B7B0000C9C4F /* frame_006.png */; };
-		AB2F18E01AD1C64F000C9C4F /* notYet.wav in Resources */ = {isa = PBXBuildFile; fileRef = AB2F18DF1AD1C64F000C9C4F /* notYet.wav */; };
-		AB2F18E31AD1CAA8000C9C4F /* frame_100.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2F18E11AD1CAA8000C9C4F /* frame_100.png */; };
-		AB2F18E41AD1CAA8000C9C4F /* frame_101.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2F18E21AD1CAA8000C9C4F /* frame_101.png */; };
-		AB2F18E71AD1CBC1000C9C4F /* frame_107.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2F18E51AD1CBC1000C9C4F /* frame_107.png */; };
-		AB2F18E81AD1CBC1000C9C4F /* frame_108.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2F18E61AD1CBC1000C9C4F /* frame_108.png */; };
-		AB2F18EA1AD1CCDA000C9C4F /* backYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2F18E91AD1CCDA000C9C4F /* backYellow.png */; };
+		AB1FA11B1AED014000734845 /* maintheme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AB1FA11A1AED014000734845 /* maintheme.mp3 */; };
 		AB2F18EC1AD1D633000C9C4F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2F18EB1AD1D633000C9C4F /* Media.xcassets */; };
-		AB8128E11AD016FE009EF94A /* weeds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB8128E01AD016FE009EF94A /* weeds.jpg */; };
-		AB8128E91AD01A07009EF94A /* BoxBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8128E41AD01A07009EF94A /* BoxBlue.png */; };
-		AB8128EA1AD01A07009EF94A /* BoxGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8128E51AD01A07009EF94A /* BoxGreen.png */; };
-		AB8128EB1AD01A07009EF94A /* BoxGrey.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8128E61AD01A07009EF94A /* BoxGrey.png */; };
-		AB8128EC1AD01A07009EF94A /* BoxRed.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8128E71AD01A07009EF94A /* BoxRed.png */; };
-		AB8128ED1AD01A07009EF94A /* BoxYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8128E81AD01A07009EF94A /* BoxYellow.png */; };
-		AB8128F41AD0248E009EF94A /* buk.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8128F01AD0248E009EF94A /* buk.png */; };
-		AB8128F61AD0248E009EF94A /* GameBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8128F31AD0248E009EF94A /* GameBackground.png */; };
-		AB81290B1AD03EFC009EF94A /* а.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8129041AD03EFC009EF94A /* а.png */; };
-		AB81290C1AD03EFC009EF94A /* б.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8129051AD03EFC009EF94A /* б.png */; };
-		AB81290D1AD03EFC009EF94A /* е.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8129061AD03EFC009EF94A /* е.png */; };
-		AB81290E1AD03EFC009EF94A /* и.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8129071AD03EFC009EF94A /* и.png */; };
-		AB81290F1AD03EFC009EF94A /* о.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8129081AD03EFC009EF94A /* о.png */; };
-		AB8129101AD03EFC009EF94A /* у.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8129091AD03EFC009EF94A /* у.png */; };
-		AB8129111AD03EFC009EF94A /* і.png in Resources */ = {isa = PBXBuildFile; fileRef = AB81290A1AD03EFC009EF94A /* і.png */; };
-		AB8129131AD04078009EF94A /* к.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8129121AD04078009EF94A /* к.png */; };
-		AB8129151AD041B7009EF94A /* empty.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8129141AD041B7009EF94A /* empty.png */; };
-		AB8129171AD05971009EF94A /* бук.wav in Resources */ = {isa = PBXBuildFile; fileRef = AB8129161AD05971009EF94A /* бук.wav */; };
-		AB81291D1AD05F19009EF94A /* л.png in Resources */ = {isa = PBXBuildFile; fileRef = AB81291C1AD05F19009EF94A /* л.png */; };
-		AB81291F1AD05FA9009EF94A /* лак.wav in Resources */ = {isa = PBXBuildFile; fileRef = AB81291E1AD05FA9009EF94A /* лак.wav */; };
-		AB9BC7D31AD08BD300D76965 /* byk.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9BC7CF1AD08BD300D76965 /* byk.png */; };
-		AB9BC7D41AD08BD300D76965 /* nis.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9BC7D01AD08BD300D76965 /* nis.png */; };
-		AB9BC7D51AD08BD300D76965 /* pen.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9BC7D11AD08BD300D76965 /* pen.png */; };
-		AB9BC7D61AD08BD300D76965 /* som.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9BC7D21AD08BD300D76965 /* som.png */; };
-		AB9BC7DC1AD08FBD00D76965 /* ь.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9BC7D71AD08FBD00D76965 /* ь.png */; };
-		AB9BC7DD1AD08FBD00D76965 /* н.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9BC7D81AD08FBD00D76965 /* н.png */; };
-		AB9BC7DE1AD08FBD00D76965 /* п.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9BC7D91AD08FBD00D76965 /* п.png */; };
-		AB9BC7DF1AD08FBD00D76965 /* м.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9BC7DA1AD08FBD00D76965 /* м.png */; };
-		AB9BC7E01AD08FBD00D76965 /* с.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9BC7DB1AD08FBD00D76965 /* с.png */; };
-		AB9BC7E51AD094A000D76965 /* ніс.wav in Resources */ = {isa = PBXBuildFile; fileRef = AB9BC7E11AD094A000D76965 /* ніс.wav */; };
-		AB9BC7E61AD094A000D76965 /* пень.wav in Resources */ = {isa = PBXBuildFile; fileRef = AB9BC7E21AD094A000D76965 /* пень.wav */; };
-		AB9BC7E71AD094A000D76965 /* бик.wav in Resources */ = {isa = PBXBuildFile; fileRef = AB9BC7E31AD094A000D76965 /* бик.wav */; };
-		AB9BC7E81AD094A000D76965 /* сом.wav in Resources */ = {isa = PBXBuildFile; fileRef = AB9BC7E41AD094A000D76965 /* сом.wav */; };
+		AB351F8E1AD93847009D07D1 /* shortsilence.wav in Resources */ = {isa = PBXBuildFile; fileRef = AB351F8D1AD93847009D07D1 /* shortsilence.wav */; };
+		AB351F901AD93DA1009D07D1 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB351F8F1AD93DA1009D07D1 /* Credentials.swift */; };
+		AB5A23991AD682BE007AB9DD /* miniGamePlayground1.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5A23921AD682BE007AB9DD /* miniGamePlayground1.png */; };
+		AB5A239A1AD682BE007AB9DD /* miniGamePlayground2.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5A23931AD682BE007AB9DD /* miniGamePlayground2.png */; };
+		AB5A239B1AD682BE007AB9DD /* miniGamePlayground3.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5A23941AD682BE007AB9DD /* miniGamePlayground3.png */; };
+		AB5A239C1AD682BE007AB9DD /* miniGamePlayground4.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5A23951AD682BE007AB9DD /* miniGamePlayground4.png */; };
+		AB5A239D1AD682BE007AB9DD /* miniGamePlayground5.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5A23961AD682BE007AB9DD /* miniGamePlayground5.png */; };
+		AB5A239E1AD682BE007AB9DD /* miniGamePlayground6.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5A23971AD682BE007AB9DD /* miniGamePlayground6.png */; };
+		AB62E5D31ADA93860057B176 /* play_overlay_no_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = AB62E5D21ADA93860057B176 /* play_overlay_no_circle.png */; };
+		AB6AC50C1AD9C078006DAD14 /* spell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AB6AC50B1AD9C078006DAD14 /* spell.mp3 */; };
+		AB7D6D841AD85E06002645FB /* starting.png in Resources */ = {isa = PBXBuildFile; fileRef = AB7D6D831AD85E06002645FB /* starting.png */; };
+		AB8546DE1AED2B4D00F316B0 /* starts.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8546DD1AED2B4D00F316B0 /* starts.png */; };
+		AB8546E61AED2CDD00F316B0 /* РАК.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AB8546DF1AED2CDD00F316B0 /* РАК.mp3 */; };
+		AB8546E71AED2CDD00F316B0 /* БАНТ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AB8546E01AED2CDD00F316B0 /* БАНТ.mp3 */; };
+		AB8546E81AED2CDD00F316B0 /* ДРІТ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AB8546E11AED2CDD00F316B0 /* ДРІТ.mp3 */; };
+		AB8546E91AED2CDD00F316B0 /* ЧЕК.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AB8546E21AED2CDD00F316B0 /* ЧЕК.mp3 */; };
+		AB8546EA1AED2CDD00F316B0 /* ВОВК.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AB8546E31AED2CDD00F316B0 /* ВОВК.mp3 */; };
+		AB8546EB1AED2CDD00F316B0 /* ПРИЗ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AB8546E41AED2CDD00F316B0 /* ПРИЗ.mp3 */; };
+		AB8546EC1AED2CDD00F316B0 /* КУЩ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AB8546E51AED2CDD00F316B0 /* КУЩ.mp3 */; };
+		AB8546F01AED310B00F316B0 /* wrong1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AB8546EF1AED310B00F316B0 /* wrong1.mp3 */; };
+		AB8546F21AED319B00F316B0 /* wrong3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AB8546F11AED319B00F316B0 /* wrong3.mp3 */; };
 		ABA69CC21AD2A4A10075C896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA69CC11AD2A4A10075C896 /* Main.storyboard */; };
-		ABA69CC91AD2DF000075C896 /* НІС.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA69CC31AD2DF000075C896 /* НІС.png */; };
-		ABA69CCA1AD2DF000075C896 /* БИК.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA69CC41AD2DF000075C896 /* БИК.png */; };
-		ABA69CCB1AD2DF000075C896 /* БУК.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA69CC51AD2DF000075C896 /* БУК.png */; };
-		ABA69CCC1AD2DF000075C896 /* ЛАК.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA69CC61AD2DF000075C896 /* ЛАК.png */; };
-		ABA69CCD1AD2DF000075C896 /* ПЕНЬ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA69CC71AD2DF000075C896 /* ПЕНЬ.png */; };
-		ABA69CCE1AD2DF000075C896 /* СОМ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA69CC81AD2DF000075C896 /* СОМ.png */; };
-		ABA69CD51AD2F7C80075C896 /* miniGamePlayground6.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA69CCF1AD2F7C80075C896 /* miniGamePlayground6.png */; };
-		ABA69CD61AD2F7C80075C896 /* miniGamePlayground1.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA69CD01AD2F7C80075C896 /* miniGamePlayground1.png */; };
-		ABA69CD71AD2F7C80075C896 /* miniGamePlayground2.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA69CD11AD2F7C80075C896 /* miniGamePlayground2.png */; };
-		ABA69CD81AD2F7C80075C896 /* miniGamePlayground5.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA69CD21AD2F7C80075C896 /* miniGamePlayground5.png */; };
-		ABA69CD91AD2F7C80075C896 /* miniGamePlayground4.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA69CD31AD2F7C80075C896 /* miniGamePlayground4.png */; };
-		ABA69CDA1AD2F7C80075C896 /* miniGamePlayground3.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA69CD41AD2F7C80075C896 /* miniGamePlayground3.png */; };
-		ABE6EABE1AD0650C000C2BD5 /* laк.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE6EABD1AD0650C000C2BD5 /* laк.png */; };
-		ABE6EAC01AD068B4000C2BD5 /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE6EABF1AD068B4000C2BD5 /* backButton.png */; };
-		ABE6EAC31AD081E9000C2BD5 /* good.wav in Resources */ = {isa = PBXBuildFile; fileRef = ABE6EAC11AD081E9000C2BD5 /* good.wav */; };
-		ABE6EAC41AD081E9000C2BD5 /* tryagain.wav in Resources */ = {isa = PBXBuildFile; fileRef = ABE6EAC21AD081E9000C2BD5 /* tryagain.wav */; };
-		ABE6EAC61AD084D7000C2BD5 /* GameBackgroundUpSideDown.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE6EAC51AD084D7000C2BD5 /* GameBackgroundUpSideDown.png */; };
+		ABABA6D71AD6B375001F6051 /* button3.png in Resources */ = {isa = PBXBuildFile; fileRef = ABABA6D41AD6B375001F6051 /* button3.png */; };
+		ABC7069E1AED0BB0005A5420 /* correct4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706991AED0BB0005A5420 /* correct4.mp3 */; };
+		ABC7069F1AED0BB0005A5420 /* correct1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC7069A1AED0BB0005A5420 /* correct1.mp3 */; };
+		ABC706A01AED0BB0005A5420 /* correct2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC7069B1AED0BB0005A5420 /* correct2.mp3 */; };
+		ABC706A11AED0BB0005A5420 /* correct3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC7069C1AED0BB0005A5420 /* correct3.mp3 */; };
+		ABC706A21AED0BB0005A5420 /* correct5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC7069D1AED0BB0005A5420 /* correct5.mp3 */; };
+		ABC706A81AED0BBB005A5420 /* wrong2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706A31AED0BBB005A5420 /* wrong2.mp3 */; };
+		ABC706A91AED0BBB005A5420 /* wrong4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706A41AED0BBB005A5420 /* wrong4.mp3 */; };
+		ABC706AB1AED0BBB005A5420 /* wrong5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706A61AED0BBB005A5420 /* wrong5.mp3 */; };
+		ABC706ED1AED130F005A5420 /* БАК.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706AD1AED130F005A5420 /* БАК.mp3 */; };
+		ABC706EE1AED130F005A5420 /* БАНК.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706AE1AED130F005A5420 /* БАНК.mp3 */; };
+		ABC706EF1AED130F005A5420 /* БИК.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706AF1AED130F005A5420 /* БИК.mp3 */; };
+		ABC706F01AED130F005A5420 /* БІБ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706B01AED130F005A5420 /* БІБ.mp3 */; };
+		ABC706F11AED130F005A5420 /* БОКС.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706B11AED130F005A5420 /* БОКС.mp3 */; };
+		ABC706F21AED130F005A5420 /* БОРЩ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706B21AED130F005A5420 /* БОРЩ.mp3 */; };
+		ABC706F31AED130F005A5420 /* БУК.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706B31AED130F005A5420 /* БУК.mp3 */; };
+		ABC706F41AED130F005A5420 /* ВУЖ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706B41AED130F005A5420 /* ВУЖ.mp3 */; };
+		ABC706F51AED130F005A5420 /* ГАЙ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706B51AED130F005A5420 /* ГАЙ.mp3 */; };
+		ABC706F61AED130F005A5420 /* ГАК.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706B61AED130F005A5420 /* ГАК.mp3 */; };
+		ABC706F71AED130F005A5420 /* ДАХ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706B71AED130F005A5420 /* ДАХ.mp3 */; };
+		ABC706F81AED130F005A5420 /* ДЕНЬ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706B81AED130F005A5420 /* ДЕНЬ.mp3 */; };
+		ABC706F91AED130F005A5420 /* ДИМ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706B91AED130F005A5420 /* ДИМ.mp3 */; };
+		ABC706FA1AED130F005A5420 /* ДИСК.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706BA1AED130F005A5420 /* ДИСК.mp3 */; };
+		ABC706FB1AED130F005A5420 /* ДІД.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706BB1AED130F005A5420 /* ДІД.mp3 */; };
+		ABC706FC1AED130F005A5420 /* ДОЩ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706BC1AED130F005A5420 /* ДОЩ.mp3 */; };
+		ABC706FD1AED130F005A5420 /* ДРІЗД.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706BD1AED130F005A5420 /* ДРІЗД.mp3 */; };
+		ABC706FE1AED130F005A5420 /* ДУБ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706BE1AED130F005A5420 /* ДУБ.mp3 */; };
+		ABC706FF1AED130F005A5420 /* ДУШ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706BF1AED130F005A5420 /* ДУШ.mp3 */; };
+		ABC707001AED130F005A5420 /* ЖЕЗЛ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706C01AED130F005A5420 /* ЖЕЗЛ.mp3 */; };
+		ABC707011AED130F005A5420 /* ЖИР.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706C11AED130F005A5420 /* ЖИР.mp3 */; };
+		ABC707021AED130F005A5420 /* ЗУБ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706C21AED130F005A5420 /* ЗУБ.mp3 */; };
+		ABC707031AED130F005A5420 /* ЙОД.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706C31AED130F005A5420 /* ЙОД.mp3 */; };
+		ABC707041AED130F005A5420 /* КИТ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706C41AED130F005A5420 /* КИТ.mp3 */; };
+		ABC707051AED130F005A5420 /* КРЕМ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706C51AED130F005A5420 /* КРЕМ.mp3 */; };
+		ABC707061AED130F005A5420 /* КРІП.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706C61AED130F005A5420 /* КРІП.mp3 */; };
+		ABC707071AED130F005A5420 /* КРІТ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706C71AED130F005A5420 /* КРІТ.mp3 */; };
+		ABC707081AED130F005A5420 /* КУТ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706C81AED130F005A5420 /* КУТ.mp3 */; };
+		ABC707091AED130F005A5420 /* ЛАК.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706C91AED130F005A5420 /* ЛАК.mp3 */; };
+		ABC7070A1AED130F005A5420 /* ЛЕВ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706CA1AED130F005A5420 /* ЛЕВ.mp3 */; };
+		ABC7070B1AED130F005A5420 /* ЛИН.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706CB1AED130F005A5420 /* ЛИН.mp3 */; };
+		ABC7070C1AED130F005A5420 /* ЛИС.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706CC1AED130F005A5420 /* ЛИС.mp3 */; };
+		ABC7070D1AED130F005A5420 /* ЛИСТ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706CD1AED130F005A5420 /* ЛИСТ.mp3 */; };
+		ABC7070E1AED130F005A5420 /* ЛОБ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706CE1AED130F005A5420 /* ЛОБ.mp3 */; };
+		ABC7070F1AED130F005A5420 /* ЛОМ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706CF1AED130F005A5420 /* ЛОМ.mp3 */; };
+		ABC707101AED130F005A5420 /* ЛОСЬ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706D01AED130F005A5420 /* ЛОСЬ.mp3 */; };
+		ABC707111AED130F005A5420 /* ЛУК.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706D11AED130F005A5420 /* ЛУК.mp3 */; };
+		ABC707121AED130F005A5420 /* МАК.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706D21AED130F005A5420 /* МАК.mp3 */; };
+		ABC707131AED130F005A5420 /* МЕД.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706D31AED130F005A5420 /* МЕД.mp3 */; };
+		ABC707141AED130F005A5420 /* НІЖ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706D41AED130F005A5420 /* НІЖ.mp3 */; };
+		ABC707151AED130F005A5420 /* НІС.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706D51AED130F005A5420 /* НІС.mp3 */; };
+		ABC707161AED130F005A5420 /* НІЧ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706D61AED130F005A5420 /* НІЧ.mp3 */; };
+		ABC707171AED130F005A5420 /* ПЕНЬ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706D71AED130F005A5420 /* ПЕНЬ.mp3 */; };
+		ABC707181AED130F005A5420 /* ПЕС.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706D81AED130F005A5420 /* ПЕС.mp3 */; };
+		ABC707191AED130F005A5420 /* ПІЧ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706D91AED130F005A5420 /* ПІЧ.mp3 */; };
+		ABC7071A1AED130F005A5420 /* САД.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706DA1AED130F005A5420 /* САД.mp3 */; };
+		ABC7071B1AED130F005A5420 /* САК.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706DB1AED130F005A5420 /* САК.mp3 */; };
+		ABC7071C1AED130F005A5420 /* СИН.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706DC1AED130F005A5420 /* СИН.mp3 */; };
+		ABC7071D1AED130F005A5420 /* СІК.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706DD1AED130F005A5420 /* СІК.mp3 */; };
+		ABC7071E1AED130F005A5420 /* СОМ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706DE1AED130F005A5420 /* СОМ.mp3 */; };
+		ABC7071F1AED130F005A5420 /* СОН.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706DF1AED130F005A5420 /* СОН.mp3 */; };
+		ABC707201AED130F005A5420 /* СУК.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706E01AED130F005A5420 /* СУК.mp3 */; };
+		ABC707211AED130F005A5420 /* СУП.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706E11AED130F005A5420 /* СУП.mp3 */; };
+		ABC707221AED130F005A5420 /* ТИГР.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706E21AED130F005A5420 /* ТИГР.mp3 */; };
+		ABC707231AED130F005A5420 /* ТИН.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706E31AED130F005A5420 /* ТИН.mp3 */; };
+		ABC707241AED130F005A5420 /* ТІНЬ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706E41AED130F005A5420 /* ТІНЬ.mp3 */; };
+		ABC707251AED130F005A5420 /* ТОМ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706E51AED130F005A5420 /* ТОМ.mp3 */; };
+		ABC707261AED130F005A5420 /* ТОРТ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706E61AED130F005A5420 /* ТОРТ.mp3 */; };
+		ABC707271AED130F005A5420 /* ХРАМ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706E71AED130F005A5420 /* ХРАМ.mp3 */; };
+		ABC707281AED130F005A5420 /* ХРЕСТ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706E81AED130F005A5420 /* ХРЕСТ.mp3 */; };
+		ABC707291AED130F005A5420 /* ЦЕП.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706E91AED130F005A5420 /* ЦЕП.mp3 */; };
+		ABC7072A1AED130F005A5420 /* ЧАЙ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706EA1AED130F005A5420 /* ЧАЙ.mp3 */; };
+		ABC7072B1AED130F005A5420 /* ШНУР.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706EB1AED130F005A5420 /* ШНУР.mp3 */; };
+		ABC7072C1AED130F005A5420 /* ЩУР.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ABC706EC1AED130F005A5420 /* ЩУР.mp3 */; };
+		ABDC0ACD1AD5AB8B0078B76A /* БАК.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A871AD5AB8A0078B76A /* БАК.png */; };
+		ABDC0ACE1AD5AB8B0078B76A /* БАНТ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A881AD5AB8A0078B76A /* БАНТ.png */; };
+		ABDC0ACF1AD5AB8B0078B76A /* БИК.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A891AD5AB8A0078B76A /* БИК.png */; };
+		ABDC0AD01AD5AB8B0078B76A /* БОКС.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A8A1AD5AB8A0078B76A /* БОКС.png */; };
+		ABDC0AD11AD5AB8B0078B76A /* БОРЩ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A8B1AD5AB8A0078B76A /* БОРЩ.png */; };
+		ABDC0AD21AD5AB8B0078B76A /* БУК.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A8C1AD5AB8A0078B76A /* БУК.png */; };
+		ABDC0AD31AD5AB8B0078B76A /* БІБ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A8D1AD5AB8A0078B76A /* БІБ.png */; };
+		ABDC0AD41AD5AB8B0078B76A /* ВОВК.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A8E1AD5AB8A0078B76A /* ВОВК.png */; };
+		ABDC0AD51AD5AB8B0078B76A /* ВУЖ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A8F1AD5AB8A0078B76A /* ВУЖ.png */; };
+		ABDC0AD61AD5AB8B0078B76A /* ГАЙ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A901AD5AB8A0078B76A /* ГАЙ.png */; };
+		ABDC0AD71AD5AB8B0078B76A /* ГАК.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A911AD5AB8A0078B76A /* ГАК.png */; };
+		ABDC0AD81AD5AB8B0078B76A /* ДАХ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A921AD5AB8A0078B76A /* ДАХ.png */; };
+		ABDC0AD91AD5AB8B0078B76A /* ДЕНЬ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A931AD5AB8A0078B76A /* ДЕНЬ.png */; };
+		ABDC0ADA1AD5AB8B0078B76A /* ДИМ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A941AD5AB8A0078B76A /* ДИМ.png */; };
+		ABDC0ADB1AD5AB8B0078B76A /* ДИСК.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A951AD5AB8A0078B76A /* ДИСК.png */; };
+		ABDC0ADC1AD5AB8B0078B76A /* ДОЩ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A961AD5AB8A0078B76A /* ДОЩ.png */; };
+		ABDC0ADE1AD5AB8B0078B76A /* ДРІТ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A981AD5AB8A0078B76A /* ДРІТ.png */; };
+		ABDC0ADF1AD5AB8B0078B76A /* ДУБ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A991AD5AB8A0078B76A /* ДУБ.png */; };
+		ABDC0AE01AD5AB8B0078B76A /* ДУШ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A9A1AD5AB8A0078B76A /* ДУШ.png */; };
+		ABDC0AE11AD5AB8B0078B76A /* ДІД.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A9B1AD5AB8A0078B76A /* ДІД.png */; };
+		ABDC0AE21AD5AB8B0078B76A /* ЖЕЗЛ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A9C1AD5AB8A0078B76A /* ЖЕЗЛ.png */; };
+		ABDC0AE31AD5AB8B0078B76A /* ЖИР.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A9D1AD5AB8A0078B76A /* ЖИР.png */; };
+		ABDC0AE41AD5AB8B0078B76A /* ЗУБ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A9E1AD5AB8A0078B76A /* ЗУБ.png */; };
+		ABDC0AE51AD5AB8B0078B76A /* ЙОД.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0A9F1AD5AB8A0078B76A /* ЙОД.png */; };
+		ABDC0AE61AD5AB8B0078B76A /* КИТ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AA01AD5AB8A0078B76A /* КИТ.png */; };
+		ABDC0AE71AD5AB8B0078B76A /* КРЕМ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AA11AD5AB8A0078B76A /* КРЕМ.png */; };
+		ABDC0AE81AD5AB8B0078B76A /* КРІП.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AA21AD5AB8A0078B76A /* КРІП.png */; };
+		ABDC0AE91AD5AB8B0078B76A /* КРІТ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AA31AD5AB8A0078B76A /* КРІТ.png */; };
+		ABDC0AEA1AD5AB8B0078B76A /* КУТ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AA41AD5AB8A0078B76A /* КУТ.png */; };
+		ABDC0AEB1AD5AB8B0078B76A /* КУЩ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AA51AD5AB8A0078B76A /* КУЩ.png */; };
+		ABDC0AEC1AD5AB8B0078B76A /* ЛАК.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AA61AD5AB8A0078B76A /* ЛАК.png */; };
+		ABDC0AED1AD5AB8B0078B76A /* ЛЕВ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AA71AD5AB8A0078B76A /* ЛЕВ.png */; };
+		ABDC0AEE1AD5AB8B0078B76A /* ЛИН.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AA81AD5AB8A0078B76A /* ЛИН.png */; };
+		ABDC0AEF1AD5AB8B0078B76A /* ЛИС.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AA91AD5AB8A0078B76A /* ЛИС.png */; };
+		ABDC0AF01AD5AB8B0078B76A /* ЛИСТ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AAA1AD5AB8A0078B76A /* ЛИСТ.png */; };
+		ABDC0AF11AD5AB8B0078B76A /* ЛОБ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AAB1AD5AB8A0078B76A /* ЛОБ.png */; };
+		ABDC0AF21AD5AB8B0078B76A /* ЛОМ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AAC1AD5AB8A0078B76A /* ЛОМ.png */; };
+		ABDC0AF31AD5AB8B0078B76A /* ЛОСЬ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AAD1AD5AB8A0078B76A /* ЛОСЬ.png */; };
+		ABDC0AF41AD5AB8B0078B76A /* ЛУК.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AAE1AD5AB8A0078B76A /* ЛУК.png */; };
+		ABDC0AF51AD5AB8B0078B76A /* МАК.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AAF1AD5AB8A0078B76A /* МАК.png */; };
+		ABDC0AF61AD5AB8B0078B76A /* МЕД.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AB01AD5AB8A0078B76A /* МЕД.png */; };
+		ABDC0AF71AD5AB8B0078B76A /* НІЖ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AB11AD5AB8A0078B76A /* НІЖ.png */; };
+		ABDC0AF81AD5AB8B0078B76A /* НІС.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AB21AD5AB8A0078B76A /* НІС.png */; };
+		ABDC0AF91AD5AB8B0078B76A /* НІЧ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AB31AD5AB8A0078B76A /* НІЧ.png */; };
+		ABDC0AFA1AD5AB8B0078B76A /* ПЕНЬ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AB41AD5AB8A0078B76A /* ПЕНЬ.png */; };
+		ABDC0AFB1AD5AB8B0078B76A /* ПЕС.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AB51AD5AB8A0078B76A /* ПЕС.png */; };
+		ABDC0AFC1AD5AB8B0078B76A /* ПРИЗ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AB61AD5AB8A0078B76A /* ПРИЗ.png */; };
+		ABDC0AFD1AD5AB8B0078B76A /* ПІЧ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AB71AD5AB8A0078B76A /* ПІЧ.png */; };
+		ABDC0AFE1AD5AB8B0078B76A /* РАК.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AB81AD5AB8A0078B76A /* РАК.png */; };
+		ABDC0AFF1AD5AB8B0078B76A /* САД.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AB91AD5AB8A0078B76A /* САД.png */; };
+		ABDC0B001AD5AB8B0078B76A /* САК.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0ABA1AD5AB8A0078B76A /* САК.png */; };
+		ABDC0B011AD5AB8B0078B76A /* СИН.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0ABB1AD5AB8A0078B76A /* СИН.png */; };
+		ABDC0B021AD5AB8B0078B76A /* СОМ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0ABC1AD5AB8B0078B76A /* СОМ.png */; };
+		ABDC0B031AD5AB8B0078B76A /* СОН.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0ABD1AD5AB8B0078B76A /* СОН.png */; };
+		ABDC0B041AD5AB8B0078B76A /* СУК.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0ABE1AD5AB8B0078B76A /* СУК.png */; };
+		ABDC0B051AD5AB8B0078B76A /* СУП.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0ABF1AD5AB8B0078B76A /* СУП.png */; };
+		ABDC0B061AD5AB8B0078B76A /* СІК.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AC01AD5AB8B0078B76A /* СІК.png */; };
+		ABDC0B071AD5AB8B0078B76A /* ТИГР.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AC11AD5AB8B0078B76A /* ТИГР.png */; };
+		ABDC0B081AD5AB8B0078B76A /* ТИН.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AC21AD5AB8B0078B76A /* ТИН.png */; };
+		ABDC0B091AD5AB8B0078B76A /* ТОМ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AC31AD5AB8B0078B76A /* ТОМ.png */; };
+		ABDC0B0A1AD5AB8B0078B76A /* ТОРТ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AC41AD5AB8B0078B76A /* ТОРТ.png */; };
+		ABDC0B0B1AD5AB8B0078B76A /* ТІНЬ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AC51AD5AB8B0078B76A /* ТІНЬ.png */; };
+		ABDC0B0C1AD5AB8B0078B76A /* ХРАМ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AC61AD5AB8B0078B76A /* ХРАМ.png */; };
+		ABDC0B0D1AD5AB8B0078B76A /* ХРЕСТ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AC71AD5AB8B0078B76A /* ХРЕСТ.png */; };
+		ABDC0B0E1AD5AB8B0078B76A /* ЦЕП.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AC81AD5AB8B0078B76A /* ЦЕП.png */; };
+		ABDC0B0F1AD5AB8B0078B76A /* ЧАЙ.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0AC91AD5AB8B0078B76A /* ЧАЙ.png */; };
+		ABDC0B101AD5AB8B0078B76A /* ЧЕК.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0ACA1AD5AB8B0078B76A /* ЧЕК.png */; };
+		ABDC0B111AD5AB8B0078B76A /* ШНУР.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0ACB1AD5AB8B0078B76A /* ШНУР.png */; };
+		ABDC0B121AD5AB8B0078B76A /* ЩУР.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDC0ACC1AD5AB8B0078B76A /* ЩУР.png */; };
+		ABEE88B81AD7065400C00B9C /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEE88B61AD7065400C00B9C /* reload.png */; };
+		ABEE88B91AD7065400C00B9C /* backarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEE88B71AD7065400C00B9C /* backarrow.png */; };
+		ABEE88C11AD728ED00C00B9C /* ДРІЗД.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEE88C01AD728ED00C00B9C /* ДРІЗД.png */; };
+		ABFC67FF1AD7BE0700F5F759 /* infonew.png in Resources */ = {isa = PBXBuildFile; fileRef = ABFC67FE1AD7BE0700F5F759 /* infonew.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,81 +197,181 @@
 		AB04CB391ACD56F500215976 /* Sounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB04CB3D1ACD56F500215976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB04CB3E1ACD56F500215976 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB04CB401ACD56F500215976 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB04CB481ACD56F500215976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AB04CB4E1ACD56F500215976 /* SoundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB04CB531ACD56F500215976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB04CB541ACD56F500215976 /* SoundsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsTests.swift; sourceTree = "<group>"; };
 		AB04CB5E1ACD57C700215976 /* FindVowels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindVowels.swift; sourceTree = "<group>"; };
-		AB2F18AC1AD138AD000C9C4F /* MixedLetters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixedLetters.swift; sourceTree = "<group>"; };
-		AB2F18AE1AD14C99000C9C4F /* backgroundGreenStrips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundGreenStrips.png; sourceTree = "<group>"; };
-		AB2F18AF1AD14C99000C9C4F /* menuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuButton.png; sourceTree = "<group>"; };
-		AB2F18B21AD16A15000C9C4F /* MixedSizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixedSizes.swift; sourceTree = "<group>"; };
-		AB2F18B61AD1AA58000C9C4F /* backgroundYellowStrips1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundYellowStrips1.png; sourceTree = "<group>"; };
-		AB2F18CF1AD1B7B0000C9C4F /* frame_002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_002.png; sourceTree = "<group>"; };
-		AB2F18D01AD1B7B0000C9C4F /* frame_003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_003.png; sourceTree = "<group>"; };
-		AB2F18D11AD1B7B0000C9C4F /* frame_004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_004.png; sourceTree = "<group>"; };
-		AB2F18D21AD1B7B0000C9C4F /* frame_005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_005.png; sourceTree = "<group>"; };
-		AB2F18D31AD1B7B0000C9C4F /* frame_006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_006.png; sourceTree = "<group>"; };
-		AB2F18DF1AD1C64F000C9C4F /* notYet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = notYet.wav; sourceTree = "<group>"; };
-		AB2F18E11AD1CAA8000C9C4F /* frame_100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_100.png; sourceTree = "<group>"; };
-		AB2F18E21AD1CAA8000C9C4F /* frame_101.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_101.png; sourceTree = "<group>"; };
-		AB2F18E51AD1CBC1000C9C4F /* frame_107.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_107.png; sourceTree = "<group>"; };
-		AB2F18E61AD1CBC1000C9C4F /* frame_108.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_108.png; sourceTree = "<group>"; };
-		AB2F18E91AD1CCDA000C9C4F /* backYellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backYellow.png; sourceTree = "<group>"; };
-		AB2F18EB1AD1D633000C9C4F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		AB8128E01AD016FE009EF94A /* weeds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = weeds.jpg; sourceTree = "<group>"; };
-		AB8128E31AD01756009EF94A /* uk */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = uk; path = uk.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AB8128E41AD01A07009EF94A /* BoxBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BoxBlue.png; sourceTree = "<group>"; };
-		AB8128E51AD01A07009EF94A /* BoxGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BoxGreen.png; sourceTree = "<group>"; };
-		AB8128E61AD01A07009EF94A /* BoxGrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BoxGrey.png; sourceTree = "<group>"; };
-		AB8128E71AD01A07009EF94A /* BoxRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BoxRed.png; sourceTree = "<group>"; };
-		AB8128E81AD01A07009EF94A /* BoxYellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BoxYellow.png; sourceTree = "<group>"; };
-		AB8128F01AD0248E009EF94A /* buk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buk.png; sourceTree = "<group>"; };
-		AB8128F31AD0248E009EF94A /* GameBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GameBackground.png; path = ../GameBackground.png; sourceTree = "<group>"; };
-		AB8129041AD03EFC009EF94A /* а.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "а.png"; sourceTree = "<group>"; };
-		AB8129051AD03EFC009EF94A /* б.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "б.png"; sourceTree = "<group>"; };
-		AB8129061AD03EFC009EF94A /* е.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "е.png"; sourceTree = "<group>"; };
-		AB8129071AD03EFC009EF94A /* и.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "и.png"; sourceTree = "<group>"; };
-		AB8129081AD03EFC009EF94A /* о.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "о.png"; sourceTree = "<group>"; };
-		AB8129091AD03EFC009EF94A /* у.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "у.png"; sourceTree = "<group>"; };
-		AB81290A1AD03EFC009EF94A /* і.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "і.png"; sourceTree = "<group>"; };
-		AB8129121AD04078009EF94A /* к.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "к.png"; sourceTree = "<group>"; };
-		AB8129141AD041B7009EF94A /* empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty.png; sourceTree = "<group>"; };
-		AB8129161AD05971009EF94A /* бук.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "бук.wav"; sourceTree = "<group>"; };
-		AB81291C1AD05F19009EF94A /* л.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "л.png"; sourceTree = "<group>"; };
-		AB81291E1AD05FA9009EF94A /* лак.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "лак.wav"; sourceTree = "<group>"; };
-		AB9BC7CF1AD08BD300D76965 /* byk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = byk.png; sourceTree = "<group>"; };
-		AB9BC7D01AD08BD300D76965 /* nis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nis.png; sourceTree = "<group>"; };
-		AB9BC7D11AD08BD300D76965 /* pen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pen.png; sourceTree = "<group>"; };
-		AB9BC7D21AD08BD300D76965 /* som.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = som.png; sourceTree = "<group>"; };
-		AB9BC7D71AD08FBD00D76965 /* ь.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ь.png"; sourceTree = "<group>"; };
-		AB9BC7D81AD08FBD00D76965 /* н.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "н.png"; sourceTree = "<group>"; };
-		AB9BC7D91AD08FBD00D76965 /* п.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "п.png"; sourceTree = "<group>"; };
-		AB9BC7DA1AD08FBD00D76965 /* м.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "м.png"; sourceTree = "<group>"; };
-		AB9BC7DB1AD08FBD00D76965 /* с.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "с.png"; sourceTree = "<group>"; };
-		AB9BC7E11AD094A000D76965 /* ніс.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "ніс.wav"; sourceTree = "<group>"; };
-		AB9BC7E21AD094A000D76965 /* пень.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "пень.wav"; sourceTree = "<group>"; };
-		AB9BC7E31AD094A000D76965 /* бик.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "бик.wav"; sourceTree = "<group>"; };
-		AB9BC7E41AD094A000D76965 /* сом.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "сом.wav"; sourceTree = "<group>"; };
+		AB1FA11A1AED014000734845 /* maintheme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = maintheme.mp3; sourceTree = "<group>"; };
+		AB2F18EB1AD1D633000C9C4F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../Media.xcassets; sourceTree = "<group>"; };
+		AB351F8D1AD93847009D07D1 /* shortsilence.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shortsilence.wav; sourceTree = "<group>"; };
+		AB351F8F1AD93DA1009D07D1 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		AB5A23921AD682BE007AB9DD /* miniGamePlayground1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniGamePlayground1.png; sourceTree = "<group>"; };
+		AB5A23931AD682BE007AB9DD /* miniGamePlayground2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniGamePlayground2.png; sourceTree = "<group>"; };
+		AB5A23941AD682BE007AB9DD /* miniGamePlayground3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniGamePlayground3.png; sourceTree = "<group>"; };
+		AB5A23951AD682BE007AB9DD /* miniGamePlayground4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniGamePlayground4.png; sourceTree = "<group>"; };
+		AB5A23961AD682BE007AB9DD /* miniGamePlayground5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniGamePlayground5.png; sourceTree = "<group>"; };
+		AB5A23971AD682BE007AB9DD /* miniGamePlayground6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniGamePlayground6.png; sourceTree = "<group>"; };
+		AB62E5D21ADA93860057B176 /* play_overlay_no_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_overlay_no_circle.png; sourceTree = "<group>"; };
+		AB6AC50B1AD9C078006DAD14 /* spell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spell.mp3; sourceTree = "<group>"; };
+		AB7D6D831AD85E06002645FB /* starting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starting.png; sourceTree = "<group>"; };
+		AB8546DD1AED2B4D00F316B0 /* starts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starts.png; sourceTree = "<group>"; };
+		AB8546DF1AED2CDD00F316B0 /* РАК.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "РАК.mp3"; sourceTree = "<group>"; };
+		AB8546E01AED2CDD00F316B0 /* БАНТ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "БАНТ.mp3"; sourceTree = "<group>"; };
+		AB8546E11AED2CDD00F316B0 /* ДРІТ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ДРІТ.mp3"; sourceTree = "<group>"; };
+		AB8546E21AED2CDD00F316B0 /* ЧЕК.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ЧЕК.mp3"; sourceTree = "<group>"; };
+		AB8546E31AED2CDD00F316B0 /* ВОВК.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ВОВК.mp3"; sourceTree = "<group>"; };
+		AB8546E41AED2CDD00F316B0 /* ПРИЗ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ПРИЗ.mp3"; sourceTree = "<group>"; };
+		AB8546E51AED2CDD00F316B0 /* КУЩ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "КУЩ.mp3"; sourceTree = "<group>"; };
+		AB8546EF1AED310B00F316B0 /* wrong1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong1.mp3; sourceTree = "<group>"; };
+		AB8546F11AED319B00F316B0 /* wrong3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong3.mp3; sourceTree = "<group>"; };
 		ABA69CC11AD2A4A10075C896 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		ABA69CC31AD2DF000075C896 /* НІС.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "НІС.png"; sourceTree = "<group>"; };
-		ABA69CC41AD2DF000075C896 /* БИК.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "БИК.png"; sourceTree = "<group>"; };
-		ABA69CC51AD2DF000075C896 /* БУК.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "БУК.png"; sourceTree = "<group>"; };
-		ABA69CC61AD2DF000075C896 /* ЛАК.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЛАК.png"; sourceTree = "<group>"; };
-		ABA69CC71AD2DF000075C896 /* ПЕНЬ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ПЕНЬ.png"; sourceTree = "<group>"; };
-		ABA69CC81AD2DF000075C896 /* СОМ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "СОМ.png"; sourceTree = "<group>"; };
-		ABA69CCF1AD2F7C80075C896 /* miniGamePlayground6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniGamePlayground6.png; sourceTree = "<group>"; };
-		ABA69CD01AD2F7C80075C896 /* miniGamePlayground1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniGamePlayground1.png; sourceTree = "<group>"; };
-		ABA69CD11AD2F7C80075C896 /* miniGamePlayground2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniGamePlayground2.png; sourceTree = "<group>"; };
-		ABA69CD21AD2F7C80075C896 /* miniGamePlayground5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniGamePlayground5.png; sourceTree = "<group>"; };
-		ABA69CD31AD2F7C80075C896 /* miniGamePlayground4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniGamePlayground4.png; sourceTree = "<group>"; };
-		ABA69CD41AD2F7C80075C896 /* miniGamePlayground3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniGamePlayground3.png; sourceTree = "<group>"; };
-		ABE6EABD1AD0650C000C2BD5 /* laк.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "laк.png"; sourceTree = "<group>"; };
-		ABE6EABF1AD068B4000C2BD5 /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButton.png; path = FindSoundTask1/backButton.png; sourceTree = "<group>"; };
-		ABE6EAC11AD081E9000C2BD5 /* good.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = good.wav; sourceTree = "<group>"; };
-		ABE6EAC21AD081E9000C2BD5 /* tryagain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tryagain.wav; sourceTree = "<group>"; };
-		ABE6EAC51AD084D7000C2BD5 /* GameBackgroundUpSideDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GameBackgroundUpSideDown.png; path = ../GameBackgroundUpSideDown.png; sourceTree = "<group>"; };
+		ABABA6D41AD6B375001F6051 /* button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button3.png; sourceTree = "<group>"; };
+		ABC706991AED0BB0005A5420 /* correct4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct4.mp3; sourceTree = "<group>"; };
+		ABC7069A1AED0BB0005A5420 /* correct1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct1.mp3; sourceTree = "<group>"; };
+		ABC7069B1AED0BB0005A5420 /* correct2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct2.mp3; sourceTree = "<group>"; };
+		ABC7069C1AED0BB0005A5420 /* correct3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct3.mp3; sourceTree = "<group>"; };
+		ABC7069D1AED0BB0005A5420 /* correct5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct5.mp3; sourceTree = "<group>"; };
+		ABC706A31AED0BBB005A5420 /* wrong2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong2.mp3; sourceTree = "<group>"; };
+		ABC706A41AED0BBB005A5420 /* wrong4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong4.mp3; sourceTree = "<group>"; };
+		ABC706A61AED0BBB005A5420 /* wrong5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong5.mp3; sourceTree = "<group>"; };
+		ABC706AD1AED130F005A5420 /* БАК.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "БАК.mp3"; sourceTree = "<group>"; };
+		ABC706AE1AED130F005A5420 /* БАНК.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "БАНК.mp3"; sourceTree = "<group>"; };
+		ABC706AF1AED130F005A5420 /* БИК.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "БИК.mp3"; sourceTree = "<group>"; };
+		ABC706B01AED130F005A5420 /* БІБ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "БІБ.mp3"; sourceTree = "<group>"; };
+		ABC706B11AED130F005A5420 /* БОКС.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "БОКС.mp3"; sourceTree = "<group>"; };
+		ABC706B21AED130F005A5420 /* БОРЩ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "БОРЩ.mp3"; sourceTree = "<group>"; };
+		ABC706B31AED130F005A5420 /* БУК.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "БУК.mp3"; sourceTree = "<group>"; };
+		ABC706B41AED130F005A5420 /* ВУЖ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ВУЖ.mp3"; sourceTree = "<group>"; };
+		ABC706B51AED130F005A5420 /* ГАЙ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ГАЙ.mp3"; sourceTree = "<group>"; };
+		ABC706B61AED130F005A5420 /* ГАК.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ГАК.mp3"; sourceTree = "<group>"; };
+		ABC706B71AED130F005A5420 /* ДАХ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ДАХ.mp3"; sourceTree = "<group>"; };
+		ABC706B81AED130F005A5420 /* ДЕНЬ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ДЕНЬ.mp3"; sourceTree = "<group>"; };
+		ABC706B91AED130F005A5420 /* ДИМ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ДИМ.mp3"; sourceTree = "<group>"; };
+		ABC706BA1AED130F005A5420 /* ДИСК.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ДИСК.mp3"; sourceTree = "<group>"; };
+		ABC706BB1AED130F005A5420 /* ДІД.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ДІД.mp3"; sourceTree = "<group>"; };
+		ABC706BC1AED130F005A5420 /* ДОЩ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ДОЩ.mp3"; sourceTree = "<group>"; };
+		ABC706BD1AED130F005A5420 /* ДРІЗД.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ДРІЗД.mp3"; sourceTree = "<group>"; };
+		ABC706BE1AED130F005A5420 /* ДУБ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ДУБ.mp3"; sourceTree = "<group>"; };
+		ABC706BF1AED130F005A5420 /* ДУШ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ДУШ.mp3"; sourceTree = "<group>"; };
+		ABC706C01AED130F005A5420 /* ЖЕЗЛ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ЖЕЗЛ.mp3"; sourceTree = "<group>"; };
+		ABC706C11AED130F005A5420 /* ЖИР.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ЖИР.mp3"; sourceTree = "<group>"; };
+		ABC706C21AED130F005A5420 /* ЗУБ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ЗУБ.mp3"; sourceTree = "<group>"; };
+		ABC706C31AED130F005A5420 /* ЙОД.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ЙОД.mp3"; sourceTree = "<group>"; };
+		ABC706C41AED130F005A5420 /* КИТ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "КИТ.mp3"; sourceTree = "<group>"; };
+		ABC706C51AED130F005A5420 /* КРЕМ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "КРЕМ.mp3"; sourceTree = "<group>"; };
+		ABC706C61AED130F005A5420 /* КРІП.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "КРІП.mp3"; sourceTree = "<group>"; };
+		ABC706C71AED130F005A5420 /* КРІТ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "КРІТ.mp3"; sourceTree = "<group>"; };
+		ABC706C81AED130F005A5420 /* КУТ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "КУТ.mp3"; sourceTree = "<group>"; };
+		ABC706C91AED130F005A5420 /* ЛАК.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ЛАК.mp3"; sourceTree = "<group>"; };
+		ABC706CA1AED130F005A5420 /* ЛЕВ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ЛЕВ.mp3"; sourceTree = "<group>"; };
+		ABC706CB1AED130F005A5420 /* ЛИН.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ЛИН.mp3"; sourceTree = "<group>"; };
+		ABC706CC1AED130F005A5420 /* ЛИС.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ЛИС.mp3"; sourceTree = "<group>"; };
+		ABC706CD1AED130F005A5420 /* ЛИСТ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ЛИСТ.mp3"; sourceTree = "<group>"; };
+		ABC706CE1AED130F005A5420 /* ЛОБ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ЛОБ.mp3"; sourceTree = "<group>"; };
+		ABC706CF1AED130F005A5420 /* ЛОМ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ЛОМ.mp3"; sourceTree = "<group>"; };
+		ABC706D01AED130F005A5420 /* ЛОСЬ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ЛОСЬ.mp3"; sourceTree = "<group>"; };
+		ABC706D11AED130F005A5420 /* ЛУК.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ЛУК.mp3"; sourceTree = "<group>"; };
+		ABC706D21AED130F005A5420 /* МАК.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "МАК.mp3"; sourceTree = "<group>"; };
+		ABC706D31AED130F005A5420 /* МЕД.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "МЕД.mp3"; sourceTree = "<group>"; };
+		ABC706D41AED130F005A5420 /* НІЖ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "НІЖ.mp3"; sourceTree = "<group>"; };
+		ABC706D51AED130F005A5420 /* НІС.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "НІС.mp3"; sourceTree = "<group>"; };
+		ABC706D61AED130F005A5420 /* НІЧ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "НІЧ.mp3"; sourceTree = "<group>"; };
+		ABC706D71AED130F005A5420 /* ПЕНЬ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ПЕНЬ.mp3"; sourceTree = "<group>"; };
+		ABC706D81AED130F005A5420 /* ПЕС.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ПЕС.mp3"; sourceTree = "<group>"; };
+		ABC706D91AED130F005A5420 /* ПІЧ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ПІЧ.mp3"; sourceTree = "<group>"; };
+		ABC706DA1AED130F005A5420 /* САД.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "САД.mp3"; sourceTree = "<group>"; };
+		ABC706DB1AED130F005A5420 /* САК.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "САК.mp3"; sourceTree = "<group>"; };
+		ABC706DC1AED130F005A5420 /* СИН.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "СИН.mp3"; sourceTree = "<group>"; };
+		ABC706DD1AED130F005A5420 /* СІК.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "СІК.mp3"; sourceTree = "<group>"; };
+		ABC706DE1AED130F005A5420 /* СОМ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "СОМ.mp3"; sourceTree = "<group>"; };
+		ABC706DF1AED130F005A5420 /* СОН.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "СОН.mp3"; sourceTree = "<group>"; };
+		ABC706E01AED130F005A5420 /* СУК.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "СУК.mp3"; sourceTree = "<group>"; };
+		ABC706E11AED130F005A5420 /* СУП.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "СУП.mp3"; sourceTree = "<group>"; };
+		ABC706E21AED130F005A5420 /* ТИГР.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ТИГР.mp3"; sourceTree = "<group>"; };
+		ABC706E31AED130F005A5420 /* ТИН.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ТИН.mp3"; sourceTree = "<group>"; };
+		ABC706E41AED130F005A5420 /* ТІНЬ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ТІНЬ.mp3"; sourceTree = "<group>"; };
+		ABC706E51AED130F005A5420 /* ТОМ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ТОМ.mp3"; sourceTree = "<group>"; };
+		ABC706E61AED130F005A5420 /* ТОРТ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ТОРТ.mp3"; sourceTree = "<group>"; };
+		ABC706E71AED130F005A5420 /* ХРАМ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ХРАМ.mp3"; sourceTree = "<group>"; };
+		ABC706E81AED130F005A5420 /* ХРЕСТ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ХРЕСТ.mp3"; sourceTree = "<group>"; };
+		ABC706E91AED130F005A5420 /* ЦЕП.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ЦЕП.mp3"; sourceTree = "<group>"; };
+		ABC706EA1AED130F005A5420 /* ЧАЙ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ЧАЙ.mp3"; sourceTree = "<group>"; };
+		ABC706EB1AED130F005A5420 /* ШНУР.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ШНУР.mp3"; sourceTree = "<group>"; };
+		ABC706EC1AED130F005A5420 /* ЩУР.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ЩУР.mp3"; sourceTree = "<group>"; };
+		ABDC0A871AD5AB8A0078B76A /* БАК.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "БАК.png"; sourceTree = "<group>"; };
+		ABDC0A881AD5AB8A0078B76A /* БАНТ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "БАНТ.png"; sourceTree = "<group>"; };
+		ABDC0A891AD5AB8A0078B76A /* БИК.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "БИК.png"; sourceTree = "<group>"; };
+		ABDC0A8A1AD5AB8A0078B76A /* БОКС.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "БОКС.png"; sourceTree = "<group>"; };
+		ABDC0A8B1AD5AB8A0078B76A /* БОРЩ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "БОРЩ.png"; sourceTree = "<group>"; };
+		ABDC0A8C1AD5AB8A0078B76A /* БУК.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "БУК.png"; sourceTree = "<group>"; };
+		ABDC0A8D1AD5AB8A0078B76A /* БІБ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "БІБ.png"; sourceTree = "<group>"; };
+		ABDC0A8E1AD5AB8A0078B76A /* ВОВК.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ВОВК.png"; sourceTree = "<group>"; };
+		ABDC0A8F1AD5AB8A0078B76A /* ВУЖ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ВУЖ.png"; sourceTree = "<group>"; };
+		ABDC0A901AD5AB8A0078B76A /* ГАЙ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ГАЙ.png"; sourceTree = "<group>"; };
+		ABDC0A911AD5AB8A0078B76A /* ГАК.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ГАК.png"; sourceTree = "<group>"; };
+		ABDC0A921AD5AB8A0078B76A /* ДАХ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ДАХ.png"; sourceTree = "<group>"; };
+		ABDC0A931AD5AB8A0078B76A /* ДЕНЬ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ДЕНЬ.png"; sourceTree = "<group>"; };
+		ABDC0A941AD5AB8A0078B76A /* ДИМ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ДИМ.png"; sourceTree = "<group>"; };
+		ABDC0A951AD5AB8A0078B76A /* ДИСК.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ДИСК.png"; sourceTree = "<group>"; };
+		ABDC0A961AD5AB8A0078B76A /* ДОЩ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ДОЩ.png"; sourceTree = "<group>"; };
+		ABDC0A981AD5AB8A0078B76A /* ДРІТ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ДРІТ.png"; sourceTree = "<group>"; };
+		ABDC0A991AD5AB8A0078B76A /* ДУБ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ДУБ.png"; sourceTree = "<group>"; };
+		ABDC0A9A1AD5AB8A0078B76A /* ДУШ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ДУШ.png"; sourceTree = "<group>"; };
+		ABDC0A9B1AD5AB8A0078B76A /* ДІД.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ДІД.png"; sourceTree = "<group>"; };
+		ABDC0A9C1AD5AB8A0078B76A /* ЖЕЗЛ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЖЕЗЛ.png"; sourceTree = "<group>"; };
+		ABDC0A9D1AD5AB8A0078B76A /* ЖИР.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЖИР.png"; sourceTree = "<group>"; };
+		ABDC0A9E1AD5AB8A0078B76A /* ЗУБ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЗУБ.png"; sourceTree = "<group>"; };
+		ABDC0A9F1AD5AB8A0078B76A /* ЙОД.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЙОД.png"; sourceTree = "<group>"; };
+		ABDC0AA01AD5AB8A0078B76A /* КИТ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "КИТ.png"; sourceTree = "<group>"; };
+		ABDC0AA11AD5AB8A0078B76A /* КРЕМ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "КРЕМ.png"; sourceTree = "<group>"; };
+		ABDC0AA21AD5AB8A0078B76A /* КРІП.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "КРІП.png"; sourceTree = "<group>"; };
+		ABDC0AA31AD5AB8A0078B76A /* КРІТ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "КРІТ.png"; sourceTree = "<group>"; };
+		ABDC0AA41AD5AB8A0078B76A /* КУТ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "КУТ.png"; sourceTree = "<group>"; };
+		ABDC0AA51AD5AB8A0078B76A /* КУЩ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "КУЩ.png"; sourceTree = "<group>"; };
+		ABDC0AA61AD5AB8A0078B76A /* ЛАК.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЛАК.png"; sourceTree = "<group>"; };
+		ABDC0AA71AD5AB8A0078B76A /* ЛЕВ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЛЕВ.png"; sourceTree = "<group>"; };
+		ABDC0AA81AD5AB8A0078B76A /* ЛИН.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЛИН.png"; sourceTree = "<group>"; };
+		ABDC0AA91AD5AB8A0078B76A /* ЛИС.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЛИС.png"; sourceTree = "<group>"; };
+		ABDC0AAA1AD5AB8A0078B76A /* ЛИСТ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЛИСТ.png"; sourceTree = "<group>"; };
+		ABDC0AAB1AD5AB8A0078B76A /* ЛОБ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЛОБ.png"; sourceTree = "<group>"; };
+		ABDC0AAC1AD5AB8A0078B76A /* ЛОМ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЛОМ.png"; sourceTree = "<group>"; };
+		ABDC0AAD1AD5AB8A0078B76A /* ЛОСЬ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЛОСЬ.png"; sourceTree = "<group>"; };
+		ABDC0AAE1AD5AB8A0078B76A /* ЛУК.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЛУК.png"; sourceTree = "<group>"; };
+		ABDC0AAF1AD5AB8A0078B76A /* МАК.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "МАК.png"; sourceTree = "<group>"; };
+		ABDC0AB01AD5AB8A0078B76A /* МЕД.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "МЕД.png"; sourceTree = "<group>"; };
+		ABDC0AB11AD5AB8A0078B76A /* НІЖ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "НІЖ.png"; sourceTree = "<group>"; };
+		ABDC0AB21AD5AB8A0078B76A /* НІС.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "НІС.png"; sourceTree = "<group>"; };
+		ABDC0AB31AD5AB8A0078B76A /* НІЧ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "НІЧ.png"; sourceTree = "<group>"; };
+		ABDC0AB41AD5AB8A0078B76A /* ПЕНЬ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ПЕНЬ.png"; sourceTree = "<group>"; };
+		ABDC0AB51AD5AB8A0078B76A /* ПЕС.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ПЕС.png"; sourceTree = "<group>"; };
+		ABDC0AB61AD5AB8A0078B76A /* ПРИЗ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ПРИЗ.png"; sourceTree = "<group>"; };
+		ABDC0AB71AD5AB8A0078B76A /* ПІЧ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ПІЧ.png"; sourceTree = "<group>"; };
+		ABDC0AB81AD5AB8A0078B76A /* РАК.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "РАК.png"; sourceTree = "<group>"; };
+		ABDC0AB91AD5AB8A0078B76A /* САД.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "САД.png"; sourceTree = "<group>"; };
+		ABDC0ABA1AD5AB8A0078B76A /* САК.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "САК.png"; sourceTree = "<group>"; };
+		ABDC0ABB1AD5AB8A0078B76A /* СИН.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "СИН.png"; sourceTree = "<group>"; };
+		ABDC0ABC1AD5AB8B0078B76A /* СОМ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "СОМ.png"; sourceTree = "<group>"; };
+		ABDC0ABD1AD5AB8B0078B76A /* СОН.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "СОН.png"; sourceTree = "<group>"; };
+		ABDC0ABE1AD5AB8B0078B76A /* СУК.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "СУК.png"; sourceTree = "<group>"; };
+		ABDC0ABF1AD5AB8B0078B76A /* СУП.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "СУП.png"; sourceTree = "<group>"; };
+		ABDC0AC01AD5AB8B0078B76A /* СІК.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "СІК.png"; sourceTree = "<group>"; };
+		ABDC0AC11AD5AB8B0078B76A /* ТИГР.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ТИГР.png"; sourceTree = "<group>"; };
+		ABDC0AC21AD5AB8B0078B76A /* ТИН.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ТИН.png"; sourceTree = "<group>"; };
+		ABDC0AC31AD5AB8B0078B76A /* ТОМ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ТОМ.png"; sourceTree = "<group>"; };
+		ABDC0AC41AD5AB8B0078B76A /* ТОРТ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ТОРТ.png"; sourceTree = "<group>"; };
+		ABDC0AC51AD5AB8B0078B76A /* ТІНЬ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ТІНЬ.png"; sourceTree = "<group>"; };
+		ABDC0AC61AD5AB8B0078B76A /* ХРАМ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ХРАМ.png"; sourceTree = "<group>"; };
+		ABDC0AC71AD5AB8B0078B76A /* ХРЕСТ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ХРЕСТ.png"; sourceTree = "<group>"; };
+		ABDC0AC81AD5AB8B0078B76A /* ЦЕП.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЦЕП.png"; sourceTree = "<group>"; };
+		ABDC0AC91AD5AB8B0078B76A /* ЧАЙ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЧАЙ.png"; sourceTree = "<group>"; };
+		ABDC0ACA1AD5AB8B0078B76A /* ЧЕК.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЧЕК.png"; sourceTree = "<group>"; };
+		ABDC0ACB1AD5AB8B0078B76A /* ШНУР.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ШНУР.png"; sourceTree = "<group>"; };
+		ABDC0ACC1AD5AB8B0078B76A /* ЩУР.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ЩУР.png"; sourceTree = "<group>"; };
+		ABEE88B61AD7065400C00B9C /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload.png; sourceTree = "<group>"; };
+		ABEE88B71AD7065400C00B9C /* backarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backarrow.png; sourceTree = "<group>"; };
+		ABEE88C01AD728ED00C00B9C /* ДРІЗД.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ДРІЗД.png"; sourceTree = "<group>"; };
+		ABFC67FE1AD7BE0700F5F759 /* infonew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infonew.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +395,6 @@
 		AB04CB301ACD56F500215976 = {
 			isa = PBXGroup;
 			children = (
-				AB2F18EB1AD1D633000C9C4F /* Media.xcassets */,
 				AB04CB3B1ACD56F500215976 /* Sounds */,
 				AB04CB511ACD56F500215976 /* SoundsTests */,
 				AB04CB3A1ACD56F500215976 /* Products */,
@@ -214,25 +414,21 @@
 			isa = PBXGroup;
 			children = (
 				AB04CB3E1ACD56F500215976 /* AppDelegate.swift */,
-				AB04CB401ACD56F500215976 /* ViewController.swift */,
 				AB04CB5E1ACD57C700215976 /* FindVowels.swift */,
-				AB2F18AC1AD138AD000C9C4F /* MixedLetters.swift */,
-				AB2F18B21AD16A15000C9C4F /* MixedSizes.swift */,
+				AB351F8F1AD93DA1009D07D1 /* Credentials.swift */,
 				ABA69CC11AD2A4A10075C896 /* Main.storyboard */,
 				AB04CB471ACD56F500215976 /* LaunchScreen.xib */,
+				AB2F18EB1AD1D633000C9C4F /* Media.xcassets */,
 				AB04CB3C1ACD56F500215976 /* Supporting Files */,
 			);
-			path = Sounds;
-			sourceTree = "<group>";
+			name = Sounds;
+			path = "/Volumes/JetDrive Lite 350/Документы/iOS Projects/Sounds/Sounds";
+			sourceTree = "<absolute>";
 		};
 		AB04CB3C1ACD56F500215976 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AB8129031AD03EFC009EF94A /* ABCImages */,
-				AB8128EE1AD0248E009EF94A /* FindSoundGame */,
-				AB2F18A81AD13872000C9C4F /* MixedLetters */,
-				AB8128DF1AD016FE009EF94A /* MainScreen */,
-				AB24CB811ACD782E00776CD0 /* Sounds */,
+				AB8128EE1AD0248E009EF94A /* FindSound */,
 				AB04CB3D1ACD56F500215976 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -255,135 +451,228 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AB24CB811ACD782E00776CD0 /* Sounds */ = {
+		AB351F7E1AD93770009D07D1 /* correctSounds */ = {
 			isa = PBXGroup;
 			children = (
-				ABE6EAC11AD081E9000C2BD5 /* good.wav */,
-				ABE6EAC21AD081E9000C2BD5 /* tryagain.wav */,
+				ABC7069A1AED0BB0005A5420 /* correct1.mp3 */,
+				ABC7069B1AED0BB0005A5420 /* correct2.mp3 */,
+				ABC7069C1AED0BB0005A5420 /* correct3.mp3 */,
+				ABC706991AED0BB0005A5420 /* correct4.mp3 */,
+				ABC7069D1AED0BB0005A5420 /* correct5.mp3 */,
 			);
-			path = Sounds;
+			path = correctSounds;
 			sourceTree = "<group>";
 		};
-		AB2F18A81AD13872000C9C4F /* MixedLetters */ = {
+		AB5A23771AD681DC007AB9DD /* itemSounds */ = {
 			isa = PBXGroup;
 			children = (
-				AB2F18A91AD13872000C9C4F /* MixedLettersTask1 */,
+				AB8546DF1AED2CDD00F316B0 /* РАК.mp3 */,
+				AB8546E01AED2CDD00F316B0 /* БАНТ.mp3 */,
+				AB8546E11AED2CDD00F316B0 /* ДРІТ.mp3 */,
+				AB8546E21AED2CDD00F316B0 /* ЧЕК.mp3 */,
+				AB8546E31AED2CDD00F316B0 /* ВОВК.mp3 */,
+				AB8546E41AED2CDD00F316B0 /* ПРИЗ.mp3 */,
+				AB8546E51AED2CDD00F316B0 /* КУЩ.mp3 */,
+				ABC706AD1AED130F005A5420 /* БАК.mp3 */,
+				ABC706AE1AED130F005A5420 /* БАНК.mp3 */,
+				ABC706AF1AED130F005A5420 /* БИК.mp3 */,
+				ABC706B01AED130F005A5420 /* БІБ.mp3 */,
+				ABC706B11AED130F005A5420 /* БОКС.mp3 */,
+				ABC706B21AED130F005A5420 /* БОРЩ.mp3 */,
+				ABC706B31AED130F005A5420 /* БУК.mp3 */,
+				ABC706B41AED130F005A5420 /* ВУЖ.mp3 */,
+				ABC706B51AED130F005A5420 /* ГАЙ.mp3 */,
+				ABC706B61AED130F005A5420 /* ГАК.mp3 */,
+				ABC706B71AED130F005A5420 /* ДАХ.mp3 */,
+				ABC706B81AED130F005A5420 /* ДЕНЬ.mp3 */,
+				ABC706B91AED130F005A5420 /* ДИМ.mp3 */,
+				ABC706BA1AED130F005A5420 /* ДИСК.mp3 */,
+				ABC706BB1AED130F005A5420 /* ДІД.mp3 */,
+				ABC706BC1AED130F005A5420 /* ДОЩ.mp3 */,
+				ABC706BD1AED130F005A5420 /* ДРІЗД.mp3 */,
+				ABC706BE1AED130F005A5420 /* ДУБ.mp3 */,
+				ABC706BF1AED130F005A5420 /* ДУШ.mp3 */,
+				ABC706C01AED130F005A5420 /* ЖЕЗЛ.mp3 */,
+				ABC706C11AED130F005A5420 /* ЖИР.mp3 */,
+				ABC706C21AED130F005A5420 /* ЗУБ.mp3 */,
+				ABC706C31AED130F005A5420 /* ЙОД.mp3 */,
+				ABC706C41AED130F005A5420 /* КИТ.mp3 */,
+				ABC706C51AED130F005A5420 /* КРЕМ.mp3 */,
+				ABC706C61AED130F005A5420 /* КРІП.mp3 */,
+				ABC706C71AED130F005A5420 /* КРІТ.mp3 */,
+				ABC706C81AED130F005A5420 /* КУТ.mp3 */,
+				ABC706C91AED130F005A5420 /* ЛАК.mp3 */,
+				ABC706CA1AED130F005A5420 /* ЛЕВ.mp3 */,
+				ABC706CB1AED130F005A5420 /* ЛИН.mp3 */,
+				ABC706CC1AED130F005A5420 /* ЛИС.mp3 */,
+				ABC706CD1AED130F005A5420 /* ЛИСТ.mp3 */,
+				ABC706CE1AED130F005A5420 /* ЛОБ.mp3 */,
+				ABC706CF1AED130F005A5420 /* ЛОМ.mp3 */,
+				ABC706D01AED130F005A5420 /* ЛОСЬ.mp3 */,
+				ABC706D11AED130F005A5420 /* ЛУК.mp3 */,
+				ABC706D21AED130F005A5420 /* МАК.mp3 */,
+				ABC706D31AED130F005A5420 /* МЕД.mp3 */,
+				ABC706D41AED130F005A5420 /* НІЖ.mp3 */,
+				ABC706D51AED130F005A5420 /* НІС.mp3 */,
+				ABC706D61AED130F005A5420 /* НІЧ.mp3 */,
+				ABC706D71AED130F005A5420 /* ПЕНЬ.mp3 */,
+				ABC706D81AED130F005A5420 /* ПЕС.mp3 */,
+				ABC706D91AED130F005A5420 /* ПІЧ.mp3 */,
+				ABC706DA1AED130F005A5420 /* САД.mp3 */,
+				ABC706DB1AED130F005A5420 /* САК.mp3 */,
+				ABC706DC1AED130F005A5420 /* СИН.mp3 */,
+				ABC706DD1AED130F005A5420 /* СІК.mp3 */,
+				ABC706DE1AED130F005A5420 /* СОМ.mp3 */,
+				ABC706DF1AED130F005A5420 /* СОН.mp3 */,
+				ABC706E01AED130F005A5420 /* СУК.mp3 */,
+				ABC706E11AED130F005A5420 /* СУП.mp3 */,
+				ABC706E21AED130F005A5420 /* ТИГР.mp3 */,
+				ABC706E31AED130F005A5420 /* ТИН.mp3 */,
+				ABC706E41AED130F005A5420 /* ТІНЬ.mp3 */,
+				ABC706E51AED130F005A5420 /* ТОМ.mp3 */,
+				ABC706E61AED130F005A5420 /* ТОРТ.mp3 */,
+				ABC706E71AED130F005A5420 /* ХРАМ.mp3 */,
+				ABC706E81AED130F005A5420 /* ХРЕСТ.mp3 */,
+				ABC706E91AED130F005A5420 /* ЦЕП.mp3 */,
+				ABC706EA1AED130F005A5420 /* ЧАЙ.mp3 */,
+				ABC706EB1AED130F005A5420 /* ШНУР.mp3 */,
+				ABC706EC1AED130F005A5420 /* ЩУР.mp3 */,
+				AB351F8D1AD93847009D07D1 /* shortsilence.wav */,
 			);
-			path = MixedLetters;
+			path = itemSounds;
 			sourceTree = "<group>";
 		};
-		AB2F18A91AD13872000C9C4F /* MixedLettersTask1 */ = {
+		AB5A23901AD682BE007AB9DD /* gameAssets */ = {
 			isa = PBXGroup;
 			children = (
-				AB2F18AE1AD14C99000C9C4F /* backgroundGreenStrips.png */,
-				AB2F18B61AD1AA58000C9C4F /* backgroundYellowStrips1.png */,
-				AB2F18E91AD1CCDA000C9C4F /* backYellow.png */,
-				AB2F18AF1AD14C99000C9C4F /* menuButton.png */,
-				AB2F18DF1AD1C64F000C9C4F /* notYet.wav */,
-				AB2F18BA1AD1B575000C9C4F /* gif */,
+				AB6AC50B1AD9C078006DAD14 /* spell.mp3 */,
+				ABEE88B61AD7065400C00B9C /* reload.png */,
+				ABEE88B71AD7065400C00B9C /* backarrow.png */,
+				ABABA6D41AD6B375001F6051 /* button3.png */,
+				AB5A23921AD682BE007AB9DD /* miniGamePlayground1.png */,
+				AB5A23931AD682BE007AB9DD /* miniGamePlayground2.png */,
+				AB5A23941AD682BE007AB9DD /* miniGamePlayground3.png */,
+				AB5A23951AD682BE007AB9DD /* miniGamePlayground4.png */,
+				AB5A23961AD682BE007AB9DD /* miniGamePlayground5.png */,
+				AB5A23971AD682BE007AB9DD /* miniGamePlayground6.png */,
 			);
-			path = MixedLettersTask1;
+			path = gameAssets;
 			sourceTree = "<group>";
 		};
-		AB2F18BA1AD1B575000C9C4F /* gif */ = {
+		AB5A239F1AD682C5007AB9DD /* mainMenuAssets */ = {
 			isa = PBXGroup;
 			children = (
-				AB2F18E11AD1CAA8000C9C4F /* frame_100.png */,
-				AB2F18E21AD1CAA8000C9C4F /* frame_101.png */,
-				AB2F18CF1AD1B7B0000C9C4F /* frame_002.png */,
-				AB2F18D01AD1B7B0000C9C4F /* frame_003.png */,
-				AB2F18D11AD1B7B0000C9C4F /* frame_004.png */,
-				AB2F18D21AD1B7B0000C9C4F /* frame_005.png */,
-				AB2F18D31AD1B7B0000C9C4F /* frame_006.png */,
-				AB2F18E51AD1CBC1000C9C4F /* frame_107.png */,
-				AB2F18E61AD1CBC1000C9C4F /* frame_108.png */,
+				AB8546DD1AED2B4D00F316B0 /* starts.png */,
+				AB1FA11A1AED014000734845 /* maintheme.mp3 */,
+				AB62E5D21ADA93860057B176 /* play_overlay_no_circle.png */,
+				AB7D6D831AD85E06002645FB /* starting.png */,
+				ABFC67FE1AD7BE0700F5F759 /* infonew.png */,
 			);
-			path = gif;
+			path = mainMenuAssets;
 			sourceTree = "<group>";
 		};
-		AB8128DF1AD016FE009EF94A /* MainScreen */ = {
+		AB8128EE1AD0248E009EF94A /* FindSound */ = {
 			isa = PBXGroup;
 			children = (
-				AB8128E41AD01A07009EF94A /* BoxBlue.png */,
-				AB8128E51AD01A07009EF94A /* BoxGreen.png */,
-				AB8128E61AD01A07009EF94A /* BoxGrey.png */,
-				AB8128E71AD01A07009EF94A /* BoxRed.png */,
-				AB8128E81AD01A07009EF94A /* BoxYellow.png */,
-				AB8128E01AD016FE009EF94A /* weeds.jpg */,
+				AB5A239F1AD682C5007AB9DD /* mainMenuAssets */,
+				AB5A23901AD682BE007AB9DD /* gameAssets */,
+				ABDC0A861AD5AB8A0078B76A /* itemPicures */,
+				AB5A23771AD681DC007AB9DD /* itemSounds */,
+				AB351F7E1AD93770009D07D1 /* correctSounds */,
+				ABB8BB7E1AD92B2D00598E17 /* wrongSounds */,
 			);
-			path = MainScreen;
-			sourceTree = "<group>";
-		};
-		AB8128EE1AD0248E009EF94A /* FindSoundGame */ = {
-			isa = PBXGroup;
-			children = (
-				AB8128EF1AD0248E009EF94A /* FindSoundTask1 */,
-				AB8128F11AD0248E009EF94A /* FindSoundTask2 */,
-				ABA69CCF1AD2F7C80075C896 /* miniGamePlayground6.png */,
-				ABA69CD01AD2F7C80075C896 /* miniGamePlayground1.png */,
-				ABA69CD11AD2F7C80075C896 /* miniGamePlayground2.png */,
-				ABA69CD21AD2F7C80075C896 /* miniGamePlayground5.png */,
-				ABA69CD31AD2F7C80075C896 /* miniGamePlayground4.png */,
-				ABA69CD41AD2F7C80075C896 /* miniGamePlayground3.png */,
-				ABE6EABF1AD068B4000C2BD5 /* backButton.png */,
-			);
+			name = FindSound;
 			path = FindSoundGame;
 			sourceTree = "<group>";
 		};
-		AB8128EF1AD0248E009EF94A /* FindSoundTask1 */ = {
+		ABB8BB7E1AD92B2D00598E17 /* wrongSounds */ = {
 			isa = PBXGroup;
 			children = (
-				ABA69CC31AD2DF000075C896 /* НІС.png */,
-				ABA69CC41AD2DF000075C896 /* БИК.png */,
-				ABA69CC51AD2DF000075C896 /* БУК.png */,
-				ABA69CC61AD2DF000075C896 /* ЛАК.png */,
-				ABA69CC71AD2DF000075C896 /* ПЕНЬ.png */,
-				ABA69CC81AD2DF000075C896 /* СОМ.png */,
-				AB8128F31AD0248E009EF94A /* GameBackground.png */,
-				AB8128F01AD0248E009EF94A /* buk.png */,
-				AB9BC7CF1AD08BD300D76965 /* byk.png */,
-				AB9BC7D01AD08BD300D76965 /* nis.png */,
-				AB9BC7D11AD08BD300D76965 /* pen.png */,
-				AB9BC7D21AD08BD300D76965 /* som.png */,
-				ABE6EABD1AD0650C000C2BD5 /* laк.png */,
-				AB8129161AD05971009EF94A /* бук.wav */,
-				AB9BC7E11AD094A000D76965 /* ніс.wav */,
-				AB9BC7E21AD094A000D76965 /* пень.wav */,
-				AB9BC7E31AD094A000D76965 /* бик.wav */,
-				AB9BC7E41AD094A000D76965 /* сом.wav */,
-				AB81291E1AD05FA9009EF94A /* лак.wav */,
+				AB8546EF1AED310B00F316B0 /* wrong1.mp3 */,
+				ABC706A31AED0BBB005A5420 /* wrong2.mp3 */,
+				AB8546F11AED319B00F316B0 /* wrong3.mp3 */,
+				ABC706A41AED0BBB005A5420 /* wrong4.mp3 */,
+				ABC706A61AED0BBB005A5420 /* wrong5.mp3 */,
 			);
-			path = FindSoundTask1;
+			path = wrongSounds;
 			sourceTree = "<group>";
 		};
-		AB8128F11AD0248E009EF94A /* FindSoundTask2 */ = {
+		ABDC0A861AD5AB8A0078B76A /* itemPicures */ = {
 			isa = PBXGroup;
 			children = (
-				ABE6EAC51AD084D7000C2BD5 /* GameBackgroundUpSideDown.png */,
+				ABDC0A871AD5AB8A0078B76A /* БАК.png */,
+				ABDC0A881AD5AB8A0078B76A /* БАНТ.png */,
+				ABDC0A891AD5AB8A0078B76A /* БИК.png */,
+				ABDC0A8A1AD5AB8A0078B76A /* БОКС.png */,
+				ABDC0A8B1AD5AB8A0078B76A /* БОРЩ.png */,
+				ABDC0A8C1AD5AB8A0078B76A /* БУК.png */,
+				ABDC0A8D1AD5AB8A0078B76A /* БІБ.png */,
+				ABDC0A8E1AD5AB8A0078B76A /* ВОВК.png */,
+				ABDC0A8F1AD5AB8A0078B76A /* ВУЖ.png */,
+				ABDC0A901AD5AB8A0078B76A /* ГАЙ.png */,
+				ABDC0A911AD5AB8A0078B76A /* ГАК.png */,
+				ABDC0A921AD5AB8A0078B76A /* ДАХ.png */,
+				ABDC0A931AD5AB8A0078B76A /* ДЕНЬ.png */,
+				ABDC0A941AD5AB8A0078B76A /* ДИМ.png */,
+				ABDC0A951AD5AB8A0078B76A /* ДИСК.png */,
+				ABDC0A961AD5AB8A0078B76A /* ДОЩ.png */,
+				ABEE88C01AD728ED00C00B9C /* ДРІЗД.png */,
+				ABDC0A981AD5AB8A0078B76A /* ДРІТ.png */,
+				ABDC0A991AD5AB8A0078B76A /* ДУБ.png */,
+				ABDC0A9A1AD5AB8A0078B76A /* ДУШ.png */,
+				ABDC0A9B1AD5AB8A0078B76A /* ДІД.png */,
+				ABDC0A9C1AD5AB8A0078B76A /* ЖЕЗЛ.png */,
+				ABDC0A9D1AD5AB8A0078B76A /* ЖИР.png */,
+				ABDC0A9E1AD5AB8A0078B76A /* ЗУБ.png */,
+				ABDC0A9F1AD5AB8A0078B76A /* ЙОД.png */,
+				ABDC0AA01AD5AB8A0078B76A /* КИТ.png */,
+				ABDC0AA11AD5AB8A0078B76A /* КРЕМ.png */,
+				ABDC0AA21AD5AB8A0078B76A /* КРІП.png */,
+				ABDC0AA31AD5AB8A0078B76A /* КРІТ.png */,
+				ABDC0AA41AD5AB8A0078B76A /* КУТ.png */,
+				ABDC0AA51AD5AB8A0078B76A /* КУЩ.png */,
+				ABDC0AA61AD5AB8A0078B76A /* ЛАК.png */,
+				ABDC0AA71AD5AB8A0078B76A /* ЛЕВ.png */,
+				ABDC0AA81AD5AB8A0078B76A /* ЛИН.png */,
+				ABDC0AA91AD5AB8A0078B76A /* ЛИС.png */,
+				ABDC0AAA1AD5AB8A0078B76A /* ЛИСТ.png */,
+				ABDC0AAB1AD5AB8A0078B76A /* ЛОБ.png */,
+				ABDC0AAC1AD5AB8A0078B76A /* ЛОМ.png */,
+				ABDC0AAD1AD5AB8A0078B76A /* ЛОСЬ.png */,
+				ABDC0AAE1AD5AB8A0078B76A /* ЛУК.png */,
+				ABDC0AAF1AD5AB8A0078B76A /* МАК.png */,
+				ABDC0AB01AD5AB8A0078B76A /* МЕД.png */,
+				ABDC0AB11AD5AB8A0078B76A /* НІЖ.png */,
+				ABDC0AB21AD5AB8A0078B76A /* НІС.png */,
+				ABDC0AB31AD5AB8A0078B76A /* НІЧ.png */,
+				ABDC0AB41AD5AB8A0078B76A /* ПЕНЬ.png */,
+				ABDC0AB51AD5AB8A0078B76A /* ПЕС.png */,
+				ABDC0AB61AD5AB8A0078B76A /* ПРИЗ.png */,
+				ABDC0AB71AD5AB8A0078B76A /* ПІЧ.png */,
+				ABDC0AB81AD5AB8A0078B76A /* РАК.png */,
+				ABDC0AB91AD5AB8A0078B76A /* САД.png */,
+				ABDC0ABA1AD5AB8A0078B76A /* САК.png */,
+				ABDC0ABB1AD5AB8A0078B76A /* СИН.png */,
+				ABDC0ABC1AD5AB8B0078B76A /* СОМ.png */,
+				ABDC0ABD1AD5AB8B0078B76A /* СОН.png */,
+				ABDC0ABE1AD5AB8B0078B76A /* СУК.png */,
+				ABDC0ABF1AD5AB8B0078B76A /* СУП.png */,
+				ABDC0AC01AD5AB8B0078B76A /* СІК.png */,
+				ABDC0AC11AD5AB8B0078B76A /* ТИГР.png */,
+				ABDC0AC21AD5AB8B0078B76A /* ТИН.png */,
+				ABDC0AC31AD5AB8B0078B76A /* ТОМ.png */,
+				ABDC0AC41AD5AB8B0078B76A /* ТОРТ.png */,
+				ABDC0AC51AD5AB8B0078B76A /* ТІНЬ.png */,
+				ABDC0AC61AD5AB8B0078B76A /* ХРАМ.png */,
+				ABDC0AC71AD5AB8B0078B76A /* ХРЕСТ.png */,
+				ABDC0AC81AD5AB8B0078B76A /* ЦЕП.png */,
+				ABDC0AC91AD5AB8B0078B76A /* ЧАЙ.png */,
+				ABDC0ACA1AD5AB8B0078B76A /* ЧЕК.png */,
+				ABDC0ACB1AD5AB8B0078B76A /* ШНУР.png */,
+				ABDC0ACC1AD5AB8B0078B76A /* ЩУР.png */,
 			);
-			path = FindSoundTask2;
-			sourceTree = "<group>";
-		};
-		AB8129031AD03EFC009EF94A /* ABCImages */ = {
-			isa = PBXGroup;
-			children = (
-				AB8129141AD041B7009EF94A /* empty.png */,
-				AB9BC7D71AD08FBD00D76965 /* ь.png */,
-				AB9BC7D81AD08FBD00D76965 /* н.png */,
-				AB9BC7D91AD08FBD00D76965 /* п.png */,
-				AB9BC7DA1AD08FBD00D76965 /* м.png */,
-				AB9BC7DB1AD08FBD00D76965 /* с.png */,
-				AB8129041AD03EFC009EF94A /* а.png */,
-				AB81291C1AD05F19009EF94A /* л.png */,
-				AB8129051AD03EFC009EF94A /* б.png */,
-				AB8129061AD03EFC009EF94A /* е.png */,
-				AB8129121AD04078009EF94A /* к.png */,
-				AB8129071AD03EFC009EF94A /* и.png */,
-				AB8129081AD03EFC009EF94A /* о.png */,
-				AB8129091AD03EFC009EF94A /* у.png */,
-				AB81290A1AD03EFC009EF94A /* і.png */,
-			);
-			path = ABCImages;
+			name = itemPicures;
+			path = itemPictures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,73 +756,176 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB9BC7E01AD08FBD00D76965 /* с.png in Resources */,
-				AB2F18E71AD1CBC1000C9C4F /* frame_107.png in Resources */,
-				AB9BC7DC1AD08FBD00D76965 /* ь.png in Resources */,
-				AB81290E1AD03EFC009EF94A /* и.png in Resources */,
-				AB2F18E41AD1CAA8000C9C4F /* frame_101.png in Resources */,
+				ABC706FB1AED130F005A5420 /* ДІД.mp3 in Resources */,
+				ABDC0AE71AD5AB8B0078B76A /* КРЕМ.png in Resources */,
+				ABC707131AED130F005A5420 /* МЕД.mp3 in Resources */,
+				ABDC0AE61AD5AB8B0078B76A /* КИТ.png in Resources */,
+				ABDC0AED1AD5AB8B0078B76A /* ЛЕВ.png in Resources */,
+				ABEE88C11AD728ED00C00B9C /* ДРІЗД.png in Resources */,
+				ABDC0AF11AD5AB8B0078B76A /* ЛОБ.png in Resources */,
+				ABDC0AEF1AD5AB8B0078B76A /* ЛИС.png in Resources */,
+				ABDC0AF21AD5AB8B0078B76A /* ЛОМ.png in Resources */,
+				AB8546EC1AED2CDD00F316B0 /* КУЩ.mp3 in Resources */,
 				AB2F18EC1AD1D633000C9C4F /* Media.xcassets in Resources */,
-				ABA69CCA1AD2DF000075C896 /* БИК.png in Resources */,
-				ABA69CCE1AD2DF000075C896 /* СОМ.png in Resources */,
-				ABA69CD71AD2F7C80075C896 /* miniGamePlayground2.png in Resources */,
-				AB9BC7E81AD094A000D76965 /* сом.wav in Resources */,
-				ABA69CD61AD2F7C80075C896 /* miniGamePlayground1.png in Resources */,
-				AB8128E11AD016FE009EF94A /* weeds.jpg in Resources */,
-				AB9BC7DE1AD08FBD00D76965 /* п.png in Resources */,
-				AB2F18E81AD1CBC1000C9C4F /* frame_108.png in Resources */,
-				AB8128EA1AD01A07009EF94A /* BoxGreen.png in Resources */,
-				ABA69CCD1AD2DF000075C896 /* ПЕНЬ.png in Resources */,
-				AB2F18E31AD1CAA8000C9C4F /* frame_100.png in Resources */,
-				AB8128EC1AD01A07009EF94A /* BoxRed.png in Resources */,
-				ABE6EABE1AD0650C000C2BD5 /* laк.png in Resources */,
-				AB9BC7D41AD08BD300D76965 /* nis.png in Resources */,
-				AB8128F41AD0248E009EF94A /* buk.png in Resources */,
-				ABA69CD81AD2F7C80075C896 /* miniGamePlayground5.png in Resources */,
+				AB6AC50C1AD9C078006DAD14 /* spell.mp3 in Resources */,
+				ABDC0AD61AD5AB8B0078B76A /* ГАЙ.png in Resources */,
+				ABC707011AED130F005A5420 /* ЖИР.mp3 in Resources */,
+				ABDC0AF51AD5AB8B0078B76A /* МАК.png in Resources */,
+				ABEE88B81AD7065400C00B9C /* reload.png in Resources */,
+				ABDC0ADE1AD5AB8B0078B76A /* ДРІТ.png in Resources */,
+				ABC707181AED130F005A5420 /* ПЕС.mp3 in Resources */,
+				ABC7072C1AED130F005A5420 /* ЩУР.mp3 in Resources */,
+				ABC706EF1AED130F005A5420 /* БИК.mp3 in Resources */,
+				ABC707291AED130F005A5420 /* ЦЕП.mp3 in Resources */,
+				AB5A239E1AD682BE007AB9DD /* miniGamePlayground6.png in Resources */,
+				AB8546F21AED319B00F316B0 /* wrong3.mp3 in Resources */,
+				ABDC0AD71AD5AB8B0078B76A /* ГАК.png in Resources */,
+				ABDC0AF41AD5AB8B0078B76A /* ЛУК.png in Resources */,
+				ABDC0AFD1AD5AB8B0078B76A /* ПІЧ.png in Resources */,
+				ABDC0AE31AD5AB8B0078B76A /* ЖИР.png in Resources */,
+				ABC706A01AED0BB0005A5420 /* correct2.mp3 in Resources */,
+				ABC706F91AED130F005A5420 /* ДИМ.mp3 in Resources */,
+				ABDC0AD31AD5AB8B0078B76A /* БІБ.png in Resources */,
+				AB5A23991AD682BE007AB9DD /* miniGamePlayground1.png in Resources */,
+				ABDC0ADF1AD5AB8B0078B76A /* ДУБ.png in Resources */,
+				ABC707211AED130F005A5420 /* СУП.mp3 in Resources */,
+				AB8546E61AED2CDD00F316B0 /* РАК.mp3 in Resources */,
+				ABDC0B0A1AD5AB8B0078B76A /* ТОРТ.png in Resources */,
+				AB7D6D841AD85E06002645FB /* starting.png in Resources */,
+				ABDC0B061AD5AB8B0078B76A /* СІК.png in Resources */,
+				AB1FA11B1AED014000734845 /* maintheme.mp3 in Resources */,
+				ABDC0AF91AD5AB8B0078B76A /* НІЧ.png in Resources */,
+				ABC706FC1AED130F005A5420 /* ДОЩ.mp3 in Resources */,
+				ABDC0ADA1AD5AB8B0078B76A /* ДИМ.png in Resources */,
+				ABC7070A1AED130F005A5420 /* ЛЕВ.mp3 in Resources */,
+				ABC7071B1AED130F005A5420 /* САК.mp3 in Resources */,
+				ABC707001AED130F005A5420 /* ЖЕЗЛ.mp3 in Resources */,
+				ABC707261AED130F005A5420 /* ТОРТ.mp3 in Resources */,
+				ABDC0AE01AD5AB8B0078B76A /* ДУШ.png in Resources */,
+				ABC706EE1AED130F005A5420 /* БАНК.mp3 in Resources */,
+				ABDC0AE91AD5AB8B0078B76A /* КРІТ.png in Resources */,
 				ABA69CC21AD2A4A10075C896 /* Main.storyboard in Resources */,
-				ABA69CDA1AD2F7C80075C896 /* miniGamePlayground3.png in Resources */,
-				ABE6EAC61AD084D7000C2BD5 /* GameBackgroundUpSideDown.png in Resources */,
-				AB2F18B11AD14C99000C9C4F /* menuButton.png in Resources */,
-				ABA69CD51AD2F7C80075C896 /* miniGamePlayground6.png in Resources */,
-				AB9BC7D61AD08BD300D76965 /* som.png in Resources */,
-				AB2F18DC1AD1B7B0000C9C4F /* frame_006.png in Resources */,
-				AB9BC7E61AD094A000D76965 /* пень.wav in Resources */,
-				AB81291F1AD05FA9009EF94A /* лак.wav in Resources */,
-				AB8129151AD041B7009EF94A /* empty.png in Resources */,
-				AB8128ED1AD01A07009EF94A /* BoxYellow.png in Resources */,
-				AB8128EB1AD01A07009EF94A /* BoxGrey.png in Resources */,
-				AB9BC7D31AD08BD300D76965 /* byk.png in Resources */,
-				AB2F18D91AD1B7B0000C9C4F /* frame_003.png in Resources */,
-				AB81290D1AD03EFC009EF94A /* е.png in Resources */,
-				AB8129101AD03EFC009EF94A /* у.png in Resources */,
-				ABE6EAC01AD068B4000C2BD5 /* backButton.png in Resources */,
-				AB9BC7E71AD094A000D76965 /* бик.wav in Resources */,
-				AB2F18E01AD1C64F000C9C4F /* notYet.wav in Resources */,
-				AB8129111AD03EFC009EF94A /* і.png in Resources */,
-				AB8129131AD04078009EF94A /* к.png in Resources */,
-				AB8129171AD05971009EF94A /* бук.wav in Resources */,
-				AB9BC7DF1AD08FBD00D76965 /* м.png in Resources */,
+				ABDC0AE21AD5AB8B0078B76A /* ЖЕЗЛ.png in Resources */,
+				ABDC0AEC1AD5AB8B0078B76A /* ЛАК.png in Resources */,
+				ABC706FA1AED130F005A5420 /* ДИСК.mp3 in Resources */,
+				ABC707091AED130F005A5420 /* ЛАК.mp3 in Resources */,
+				ABC706A21AED0BB0005A5420 /* correct5.mp3 in Resources */,
+				ABDC0AFE1AD5AB8B0078B76A /* РАК.png in Resources */,
+				ABDC0AD51AD5AB8B0078B76A /* ВУЖ.png in Resources */,
+				ABC707191AED130F005A5420 /* ПІЧ.mp3 in Resources */,
+				ABC707201AED130F005A5420 /* СУК.mp3 in Resources */,
+				ABC7070F1AED130F005A5420 /* ЛОМ.mp3 in Resources */,
+				AB5A239B1AD682BE007AB9DD /* miniGamePlayground3.png in Resources */,
+				ABDC0AD81AD5AB8B0078B76A /* ДАХ.png in Resources */,
+				ABC7071D1AED130F005A5420 /* СІК.mp3 in Resources */,
+				AB8546F01AED310B00F316B0 /* wrong1.mp3 in Resources */,
+				ABC707151AED130F005A5420 /* НІС.mp3 in Resources */,
+				ABC7069F1AED0BB0005A5420 /* correct1.mp3 in Resources */,
+				ABC706FD1AED130F005A5420 /* ДРІЗД.mp3 in Resources */,
+				AB351F8E1AD93847009D07D1 /* shortsilence.wav in Resources */,
+				ABDC0AD21AD5AB8B0078B76A /* БУК.png in Resources */,
+				ABC7070C1AED130F005A5420 /* ЛИС.mp3 in Resources */,
+				ABC7072A1AED130F005A5420 /* ЧАЙ.mp3 in Resources */,
+				ABC706F61AED130F005A5420 /* ГАК.mp3 in Resources */,
+				ABC707031AED130F005A5420 /* ЙОД.mp3 in Resources */,
+				ABC707221AED130F005A5420 /* ТИГР.mp3 in Resources */,
+				ABDC0AF31AD5AB8B0078B76A /* ЛОСЬ.png in Resources */,
+				ABDC0AF71AD5AB8B0078B76A /* НІЖ.png in Resources */,
+				ABC707141AED130F005A5420 /* НІЖ.mp3 in Resources */,
+				ABC707051AED130F005A5420 /* КРЕМ.mp3 in Resources */,
+				ABC706ED1AED130F005A5420 /* БАК.mp3 in Resources */,
+				ABC707161AED130F005A5420 /* НІЧ.mp3 in Resources */,
+				AB8546E81AED2CDD00F316B0 /* ДРІТ.mp3 in Resources */,
+				ABDC0AD11AD5AB8B0078B76A /* БОРЩ.png in Resources */,
+				ABDC0B081AD5AB8B0078B76A /* ТИН.png in Resources */,
+				ABDC0B0F1AD5AB8B0078B76A /* ЧАЙ.png in Resources */,
+				ABDC0AD41AD5AB8B0078B76A /* ВОВК.png in Resources */,
+				ABC706FF1AED130F005A5420 /* ДУШ.mp3 in Resources */,
+				ABC707021AED130F005A5420 /* ЗУБ.mp3 in Resources */,
+				AB62E5D31ADA93860057B176 /* play_overlay_no_circle.png in Resources */,
+				AB5A239A1AD682BE007AB9DD /* miniGamePlayground2.png in Resources */,
+				ABDC0B031AD5AB8B0078B76A /* СОН.png in Resources */,
+				AB8546EA1AED2CDD00F316B0 /* ВОВК.mp3 in Resources */,
+				ABDC0AE11AD5AB8B0078B76A /* ДІД.png in Resources */,
+				ABDC0AFF1AD5AB8B0078B76A /* САД.png in Resources */,
+				ABC706F31AED130F005A5420 /* БУК.mp3 in Resources */,
+				ABDC0B051AD5AB8B0078B76A /* СУП.png in Resources */,
+				ABC706F81AED130F005A5420 /* ДЕНЬ.mp3 in Resources */,
+				ABC706A81AED0BBB005A5420 /* wrong2.mp3 in Resources */,
+				ABDC0B111AD5AB8B0078B76A /* ШНУР.png in Resources */,
+				ABDC0AD01AD5AB8B0078B76A /* БОКС.png in Resources */,
+				ABC707121AED130F005A5420 /* МАК.mp3 in Resources */,
+				ABC706FE1AED130F005A5420 /* ДУБ.mp3 in Resources */,
+				ABDC0AEE1AD5AB8B0078B76A /* ЛИН.png in Resources */,
+				ABDC0AD91AD5AB8B0078B76A /* ДЕНЬ.png in Resources */,
+				ABC706F41AED130F005A5420 /* ВУЖ.mp3 in Resources */,
+				ABABA6D71AD6B375001F6051 /* button3.png in Resources */,
 				AB04CB491ACD56F500215976 /* LaunchScreen.xib in Resources */,
-				AB2F18D81AD1B7B0000C9C4F /* frame_002.png in Resources */,
-				ABA69CCC1AD2DF000075C896 /* ЛАК.png in Resources */,
-				AB2F18DA1AD1B7B0000C9C4F /* frame_004.png in Resources */,
-				ABA69CD91AD2F7C80075C896 /* miniGamePlayground4.png in Resources */,
-				AB2F18B01AD14C99000C9C4F /* backgroundGreenStrips.png in Resources */,
-				AB81291D1AD05F19009EF94A /* л.png in Resources */,
-				AB9BC7DD1AD08FBD00D76965 /* н.png in Resources */,
-				AB8128F61AD0248E009EF94A /* GameBackground.png in Resources */,
-				AB81290F1AD03EFC009EF94A /* о.png in Resources */,
-				AB2F18DB1AD1B7B0000C9C4F /* frame_005.png in Resources */,
-				ABA69CC91AD2DF000075C896 /* НІС.png in Resources */,
-				ABA69CCB1AD2DF000075C896 /* БУК.png in Resources */,
-				AB81290B1AD03EFC009EF94A /* а.png in Resources */,
-				ABE6EAC41AD081E9000C2BD5 /* tryagain.wav in Resources */,
-				AB9BC7D51AD08BD300D76965 /* pen.png in Resources */,
-				ABE6EAC31AD081E9000C2BD5 /* good.wav in Resources */,
-				AB9BC7E51AD094A000D76965 /* ніс.wav in Resources */,
-				AB8128E91AD01A07009EF94A /* BoxBlue.png in Resources */,
-				AB2F18B71AD1AA58000C9C4F /* backgroundYellowStrips1.png in Resources */,
-				AB2F18EA1AD1CCDA000C9C4F /* backYellow.png in Resources */,
-				AB81290C1AD03EFC009EF94A /* б.png in Resources */,
+				ABC7070B1AED130F005A5420 /* ЛИН.mp3 in Resources */,
+				ABDC0B101AD5AB8B0078B76A /* ЧЕК.png in Resources */,
+				ABC7071A1AED130F005A5420 /* САД.mp3 in Resources */,
+				AB5A239C1AD682BE007AB9DD /* miniGamePlayground4.png in Resources */,
+				ABEE88B91AD7065400C00B9C /* backarrow.png in Resources */,
+				ABDC0B021AD5AB8B0078B76A /* СОМ.png in Resources */,
+				ABC707061AED130F005A5420 /* КРІП.mp3 in Resources */,
+				ABDC0B0E1AD5AB8B0078B76A /* ЦЕП.png in Resources */,
+				ABDC0B0D1AD5AB8B0078B76A /* ХРЕСТ.png in Resources */,
+				ABDC0AEB1AD5AB8B0078B76A /* КУЩ.png in Resources */,
+				ABDC0ACE1AD5AB8B0078B76A /* БАНТ.png in Resources */,
+				ABDC0AFC1AD5AB8B0078B76A /* ПРИЗ.png in Resources */,
+				ABDC0B001AD5AB8B0078B76A /* САК.png in Resources */,
+				ABDC0ACD1AD5AB8B0078B76A /* БАК.png in Resources */,
+				ABC706F11AED130F005A5420 /* БОКС.mp3 in Resources */,
+				ABC7070D1AED130F005A5420 /* ЛИСТ.mp3 in Resources */,
+				ABDC0B091AD5AB8B0078B76A /* ТОМ.png in Resources */,
+				ABC7071E1AED130F005A5420 /* СОМ.mp3 in Resources */,
+				ABDC0B071AD5AB8B0078B76A /* ТИГР.png in Resources */,
+				ABC7072B1AED130F005A5420 /* ШНУР.mp3 in Resources */,
+				ABDC0B121AD5AB8B0078B76A /* ЩУР.png in Resources */,
+				AB5A239D1AD682BE007AB9DD /* miniGamePlayground5.png in Resources */,
+				ABC706F01AED130F005A5420 /* БІБ.mp3 in Resources */,
+				ABC7071F1AED130F005A5420 /* СОН.mp3 in Resources */,
+				AB8546EB1AED2CDD00F316B0 /* ПРИЗ.mp3 in Resources */,
+				ABDC0AF81AD5AB8B0078B76A /* НІС.png in Resources */,
+				ABC706AB1AED0BBB005A5420 /* wrong5.mp3 in Resources */,
+				ABC707111AED130F005A5420 /* ЛУК.mp3 in Resources */,
+				ABDC0AFA1AD5AB8B0078B76A /* ПЕНЬ.png in Resources */,
+				ABC706F71AED130F005A5420 /* ДАХ.mp3 in Resources */,
+				ABDC0AE81AD5AB8B0078B76A /* КРІП.png in Resources */,
+				ABDC0AF01AD5AB8B0078B76A /* ЛИСТ.png in Resources */,
+				ABC706F51AED130F005A5420 /* ГАЙ.mp3 in Resources */,
+				ABDC0AFB1AD5AB8B0078B76A /* ПЕС.png in Resources */,
+				ABC707071AED130F005A5420 /* КРІТ.mp3 in Resources */,
+				ABDC0B011AD5AB8B0078B76A /* СИН.png in Resources */,
+				ABC7070E1AED130F005A5420 /* ЛОБ.mp3 in Resources */,
+				AB8546DE1AED2B4D00F316B0 /* starts.png in Resources */,
+				ABC707231AED130F005A5420 /* ТИН.mp3 in Resources */,
+				ABC706F21AED130F005A5420 /* БОРЩ.mp3 in Resources */,
+				ABFC67FF1AD7BE0700F5F759 /* infonew.png in Resources */,
+				ABC707081AED130F005A5420 /* КУТ.mp3 in Resources */,
+				ABC707101AED130F005A5420 /* ЛОСЬ.mp3 in Resources */,
+				ABDC0B0B1AD5AB8B0078B76A /* ТІНЬ.png in Resources */,
+				ABDC0ADC1AD5AB8B0078B76A /* ДОЩ.png in Resources */,
+				ABC707041AED130F005A5420 /* КИТ.mp3 in Resources */,
+				ABC706A11AED0BB0005A5420 /* correct3.mp3 in Resources */,
+				AB8546E91AED2CDD00F316B0 /* ЧЕК.mp3 in Resources */,
+				ABDC0AF61AD5AB8B0078B76A /* МЕД.png in Resources */,
+				ABDC0ACF1AD5AB8B0078B76A /* БИК.png in Resources */,
+				AB8546E71AED2CDD00F316B0 /* БАНТ.mp3 in Resources */,
+				ABC7069E1AED0BB0005A5420 /* correct4.mp3 in Resources */,
+				ABDC0B0C1AD5AB8B0078B76A /* ХРАМ.png in Resources */,
+				ABC7071C1AED130F005A5420 /* СИН.mp3 in Resources */,
+				ABDC0ADB1AD5AB8B0078B76A /* ДИСК.png in Resources */,
+				ABC707251AED130F005A5420 /* ТОМ.mp3 in Resources */,
+				ABDC0AE41AD5AB8B0078B76A /* ЗУБ.png in Resources */,
+				ABDC0AE51AD5AB8B0078B76A /* ЙОД.png in Resources */,
+				ABC706A91AED0BBB005A5420 /* wrong4.mp3 in Resources */,
+				ABDC0B041AD5AB8B0078B76A /* СУК.png in Resources */,
+				ABC707241AED130F005A5420 /* ТІНЬ.mp3 in Resources */,
+				ABC707281AED130F005A5420 /* ХРЕСТ.mp3 in Resources */,
+				ABC707271AED130F005A5420 /* ХРАМ.mp3 in Resources */,
+				ABC707171AED130F005A5420 /* ПЕНЬ.mp3 in Resources */,
+				ABDC0AEA1AD5AB8B0078B76A /* КУТ.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,11 +943,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB04CB411ACD56F500215976 /* ViewController.swift in Sources */,
-				AB2F18B31AD16A15000C9C4F /* MixedSizes.swift in Sources */,
+				AB351F901AD93DA1009D07D1 /* Credentials.swift in Sources */,
 				AB04CB5F1ACD57C700215976 /* FindVowels.swift in Sources */,
 				AB04CB3F1ACD56F500215976 /* AppDelegate.swift in Sources */,
-				AB2F18AD1AD138AD000C9C4F /* MixedLetters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,7 +972,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				AB04CB481ACD56F500215976 /* Base */,
-				AB8128E31AD01756009EF94A /* uk */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -677,7 +1066,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Sounds/Info.plist;
@@ -693,7 +1081,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Sounds/Info.plist;

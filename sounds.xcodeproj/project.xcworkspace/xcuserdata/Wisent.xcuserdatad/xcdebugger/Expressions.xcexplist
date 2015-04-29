@@ -3,6 +3,25 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "Sounds.ViewController.viewDidLoad (Sounds.ViewController)() -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "status">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Sounds.Game.letterChosed (Sounds.Game)(Swift.String) -&gt; ():Game.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "name">
+            </PersistentString>
+            <PersistentString
+               value = "keys[&quot;\(name)&quot;]!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "Sounds.MixedSizes.viewDidLoad (Sounds.MixedSizes)() -&gt; ():MixedSizes.swift">
          <PersistentStrings>
             <PersistentString
@@ -33,50 +52,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "Sounds.FindVowels.loadPage (Sounds.FindVowels)(Swift.Int) -&gt; ():FindVowels.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "pageButtons[5].titleLabel!.text!">
-            </PersistentString>
-            <PersistentString
-               value = "pageButtons[0]">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "Sounds.FindVowels.(nextPage (Sounds.FindVowels) -&gt; () -&gt; ()).(closure #1):FindVowels.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.pageOneButtons[1]">
-            </PersistentString>
-            <PersistentString
-               value = "self.pageOneButtons[0]">
-            </PersistentString>
-            <PersistentString
-               value = "self.pageOneButtons">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "Sounds.Game.letterChosed (Sounds.Game)(Swift.String) -&gt; ():Game.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "name">
-            </PersistentString>
-            <PersistentString
-               value = "keys[&quot;\(name)&quot;]!">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "Sounds.ViewController.viewDidLoad (Sounds.ViewController)() -&gt; ():ViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "status">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "Sounds.Game.miniGameStart (Sounds.Game)(Swift.String) -&gt; ():Game.swift">
          <PersistentStrings>
             <PersistentString
@@ -88,10 +63,57 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "mach_msg_trap:(null)">
+         <PersistentStrings>
+            <PersistentString
+               value = "answersForMiniGames[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Sounds.FindVowels.init (Sounds.FindVowels.Type)(coder : ObjectiveC.NSCoder) -&gt; Sounds.FindVowels:FindVowels.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "trySound">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Sounds.FindVowels.loadPage (Sounds.FindVowels)(Swift.Int) -&gt; ():FindVowels.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "pageButtons[5].titleLabel!.text!">
+            </PersistentString>
+            <PersistentString
+               value = "pageButtons[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "Sounds.FindVowels.miniGameStart (Sounds.FindVowels)(ObjectiveC.UIButton) -&gt; ():FindVowels.swift">
          <PersistentStrings>
             <PersistentString
                value = "button.titleLabel!.text!">
+            </PersistentString>
+            <PersistentString
+               value = "activeMiniGame">
+            </PersistentString>
+            <PersistentString
+               value = "lettersButtons[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Sounds.FindVowels.(nextPage (Sounds.FindVowels) -&gt; () -&gt; ()).(closure #1):FindVowels.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.pageOneButtons[1]">
+            </PersistentString>
+            <PersistentString
+               value = "self.pageOneButtons">
+            </PersistentString>
+            <PersistentString
+               value = "self.pageOneButtons[0]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -99,7 +121,47 @@
          contextName = "Sounds.FindVowels.definingEverythingForPage (Sounds.FindVowels)(Swift.Array&lt;Swift.String&gt;) -&gt; ():FindVowels.swift">
          <PersistentStrings>
             <PersistentString
+               value = "gameSoundsStrings[0]">
+            </PersistentString>
+            <PersistentString
+               value = "quickNSURL">
+            </PersistentString>
+            <PersistentString
+               value = "setShuffled[0]">
+            </PersistentString>
+            <PersistentString
                value = "answerLabels[0].text">
+            </PersistentString>
+            <PersistentString
+               value = "setShuffled[i]">
+            </PersistentString>
+            <PersistentString
+               value = "answersForMiniGames[0]">
+            </PersistentString>
+            <PersistentString
+               value = "namesAsArrayOfCharsReadyToShow[1]">
+            </PersistentString>
+            <PersistentString
+               value = "NSBundle.mainBundle().pathForResource(&quot;\(setShuffled[0])&quot;, ofType: &quot;wav&quot;)!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Swift._fatalErrorMessage (Swift.StaticString, Swift.StaticString, Swift.StaticString, Swift.UInt) -&gt; ():(null)">
+         <PersistentStrings>
+            <PersistentString
+               value = "pageTwoWords">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Sounds.FindVowels.letterChosed (Sounds.FindVowels)(ObjectiveC.UIButton) -&gt; ():FindVowels.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sender.titleLabel!.text!">
+            </PersistentString>
+            <PersistentString
+               value = "activeMiniGame.titleLabel!.text!">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
